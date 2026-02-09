@@ -1,0 +1,3518 @@
+[
+  {
+    "question": "I want to know the current monthly and annual inflation percentages for the Consumer Price Index (CPI). Also, provide the market capitalization and real-time volume of Bitcoin in US Dollars. Can you also fetch the company information for Amazon, including its industry and website?",
+    "reference": [
+      {
+        "tool": "Inflation by API-Ninjas_/v1/inflation",
+        "param": {}
+      },
+      {
+        "tool": "Realtime Crypto Prices_Market Capitalization",
+        "param": {}
+      },
+      {
+        "tool": "Realtime Crypto Prices_Get Liquidity Value",
+        "param": {}
+      },
+      {
+        "tool": "Realtime Crypto Prices_Get Realtime Volume",
+        "param": {}
+      },
+      {
+        "tool": "Defi Data_Protocol",
+        "param": {}
+      },
+      {
+        "tool": "Defi Data_Block",
+        "param": {}
+      },
+      {
+        "tool": "Defi Data_Tvl protocol",
+        "param": {}
+      },
+      {
+        "tool": "CoinLore Cryptocurrency_Get markets of coin",
+        "param": {}
+      },
+      {
+        "tool": "CoinLore Cryptocurrency_Get exchanges",
+        "param": {}
+      },
+      {
+        "tool": "CoinLore Cryptocurrency_All coins ticker",
+        "param": {}
+      },
+      {
+        "tool": "Stoxx_Get Company Market Performance",
+        "param": {}
+      },
+      {
+        "tool": "Stoxx_Get Company Information",
+        "param": {}
+      },
+      {
+        "tool": "Stoxx_Get Company Historical Data",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning to observe the sunrise and sunset from a hilltop. Can you provide me with the sunrise and sunset times for tomorrow? Additionally, fetch the positions of celestial bodies like stars and planets at that time to enhance the experience.",
+    "reference": [
+      {
+        "tool": "Astronomy_Search",
+        "param": {}
+      },
+      {
+        "tool": "Astronomy_Get all bodies positions",
+        "param": {}
+      },
+      {
+        "tool": "Astronomy_Get positions for body",
+        "param": {}
+      },
+      {
+        "tool": "teste_logoutUser",
+        "param": {}
+      },
+      {
+        "tool": "teste_getInventory",
+        "param": {}
+      },
+      {
+        "tool": "teste_getPetById",
+        "param": {}
+      },
+      {
+        "tool": "Daily atmosphere  carbon dioxide concentration_Carbon dioxide endpoint",
+        "param": {}
+      },
+      {
+        "tool": "Yawin Indian Astrology_Get Sun Rise and Sun Set Time",
+        "param": {}
+      },
+      {
+        "tool": "Yawin Indian Astrology_Get Planet Position Angles",
+        "param": {}
+      },
+      {
+        "tool": "Yawin Indian Astrology_Convert Planet Degree to  Planet Angle",
+        "param": {}
+      },
+      {
+        "tool": "CarbonSutra_Nearest Airport from Postal Code",
+        "param": {}
+      },
+      {
+        "tool": "CarbonSutra_Vehicles Models",
+        "param": {}
+      },
+      {
+        "tool": "CarbonSutra_Cluster Data",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a filmmaker and I need inspiration for my next project. Can you recommend some similar movies to 'The Shawshank Redemption' and provide their IMDb ratings? Also, fetch the title details for these movies, including their genres, runtimes, and available streaming platforms.",
+    "reference": [
+      {
+        "tool": "Similar Movies_get Id",
+        "param": {}
+      },
+      {
+        "tool": "Similar Movies_find similar",
+        "param": {}
+      },
+      {
+        "tool": "Movie, TV, music search and download_Search Torrents",
+        "param": {}
+      },
+      {
+        "tool": "Movie, TV, music search and download_Get Monthly Top 100 Movies Torrents",
+        "param": {}
+      },
+      {
+        "tool": "Movie, TV, music search and download_Get Monthly Top 100 Games Torrents",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}/aka",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/actors",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/actors/{id}",
+        "param": {}
+      },
+      {
+        "tool": "Star Wars Characters_Get all characters",
+        "param": {}
+      },
+      {
+        "tool": "OTT details_Title Details",
+        "param": {}
+      },
+      {
+        "tool": "OTT details_New Arrivals",
+        "param": {}
+      },
+      {
+        "tool": "OTT details_OTT Providers",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a movie night with my family, and I need a movie that is suitable for all ages. Can you provide me with the detailed response for the movie with the ID 399566? Additionally, fetch the monthly top 100 music torrents for some lively background music during the movie night.",
+    "reference": [
+      {
+        "tool": "OTT details_Title Details",
+        "param": {}
+      },
+      {
+        "tool": "OTT details_Additional Title Details",
+        "param": {}
+      },
+      {
+        "tool": "OTT details_Search",
+        "param": {}
+      },
+      {
+        "tool": "Anime DB_Get Genres",
+        "param": {}
+      },
+      {
+        "tool": "Anime DB_Get one anime by ranking",
+        "param": {}
+      },
+      {
+        "tool": "Anime DB_Get All",
+        "param": {}
+      },
+      {
+        "tool": "Advanced Movie Search_Search by Name",
+        "param": {}
+      },
+      {
+        "tool": "Advanced Movie Search_Get Detailed Response",
+        "param": {}
+      },
+      {
+        "tool": "Advanced Movie Search_Genre List",
+        "param": {}
+      },
+      {
+        "tool": "Movie, TV, music search and download_Get Monthly Top 100 Music Torrents",
+        "param": {}
+      },
+      {
+        "tool": "Movie, TV, music search and download_Get Monthly Top 100 Movies Torrents",
+        "param": {}
+      },
+      {
+        "tool": "Movie, TV, music search and download_Get Monthly Top 100 TV-shows Torrents",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am starting a new fitness routine and I want to incorporate exercises that target specific muscle groups. Can you provide me with a list of exercises that target the quadriceps and hamstrings? Additionally, I would like to know the BMI based on my height and weight in metric units.",
+    "reference": [
+      {
+        "tool": "BMI_v2_Gives the BMI when you input height in feet and inches & input weight in kilograms",
+        "param": {}
+      },
+      {
+        "tool": "BMI_v2_Gives the BMI when you Input values in Metric units",
+        "param": {}
+      },
+      {
+        "tool": "BMI_v2_Gives the weight catergory based on the BMI",
+        "param": {}
+      },
+      {
+        "tool": "Horostory_hoscoscope",
+        "param": {}
+      },
+      {
+        "tool": "Horostory_planetaryoverview",
+        "param": {}
+      },
+      {
+        "tool": "Pregnancy Calculator API_Fertility Window - GET",
+        "param": {}
+      },
+      {
+        "tool": "Pregnancy Calculator API_Conception Date",
+        "param": {}
+      },
+      {
+        "tool": "Pregnancy Calculator API_Pregnancy Weight Recommendation - GET",
+        "param": {}
+      },
+      {
+        "tool": "AirVisual_stations/v2/get-information",
+        "param": {}
+      },
+      {
+        "tool": "AirVisual_auto-complete (Deprecated)",
+        "param": {}
+      },
+      {
+        "tool": "AirVisual_cities/get-measurements (Deprecated)",
+        "param": {}
+      },
+      {
+        "tool": "Exercises by API-Ninjas_/v1/exercises",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to gather information about the latest news articles related to a specific topic. Can you fetch the DM conversation using the Get DM Conversation API? Additionally, provide me with the top posts by a specific user from the Reddit API to get a comprehensive view of the topic. Thank you for your assistance.",
+    "reference": [
+      {
+        "tool": "Tweesky_/status",
+        "param": {}
+      },
+      {
+        "tool": "TwttrAPI_Get Tweet Conversation",
+        "param": {}
+      },
+      {
+        "tool": "TwttrAPI_Get DM Conversation",
+        "param": {}
+      },
+      {
+        "tool": "TwttrAPI_Get Tweet",
+        "param": {}
+      },
+      {
+        "tool": "Instagram Cheapest_user_medias",
+        "param": {}
+      },
+      {
+        "tool": "Instagram Cheapest_userinfo",
+        "param": {}
+      },
+      {
+        "tool": "Reddit_Top Posts By Username",
+        "param": {}
+      },
+      {
+        "tool": "Reddit_Top Popular Posts",
+        "param": {}
+      },
+      {
+        "tool": "Reddit_Rising Popular Posts",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_Music Data by ID",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_User Feed by ID",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_User by Keyword",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to organize a company event and include some entertaining records. Can you fetch the Guinness World Records related to 'push ups' and provide the details of the record with the most consecutive vertical push-ups? Also, recommend a random Quick Pick for Lotto America to add some fun to our event.",
+    "reference": [
+      {
+        "tool": "HeyWatch Video Encoding_GenerateVideoThumbnailSync",
+        "param": {}
+      },
+      {
+        "tool": "HeyWatch Video Encoding_GetAccount",
+        "param": {}
+      },
+      {
+        "tool": "HeyWatch Video Encoding_GetAllFormats",
+        "param": {}
+      },
+      {
+        "tool": "Lotto America_Random QuickPick for Play",
+        "param": {}
+      },
+      {
+        "tool": "Lotto America_Get All Lotto America Drawings",
+        "param": {}
+      },
+      {
+        "tool": "Lotto America_Latest Drawing",
+        "param": {}
+      },
+      {
+        "tool": "Programming Memes Reddit_Get All Memes",
+        "param": {}
+      },
+      {
+        "tool": "Guinness-World-Records-Api_Get Records",
+        "param": {}
+      },
+      {
+        "tool": "Guinness-World-Records-Api_Get Record Details",
+        "param": {}
+      },
+      {
+        "tool": "60K Radio Stations_Get Genres",
+        "param": {}
+      },
+      {
+        "tool": "60K Radio Stations_Get Cities",
+        "param": {}
+      },
+      {
+        "tool": "60K Radio Stations_Get Countries",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "My company is launching a new product and we need to create a promotional video. Can you help us find videos related to our industry? Additionally, provide us with the ability to download these videos and generate PDF documents with video thumbnails and descriptions for reference during the video editing process.",
+    "reference": [
+      {
+        "tool": "Video Downloader_Video Downloader",
+        "param": {}
+      },
+      {
+        "tool": "Web Capture_Generate PDF",
+        "param": {}
+      },
+      {
+        "tool": "Web Capture_Take  Image Screenshot",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_ModifyTiff",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_ModifyWmf",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_ConvertTiffToFax",
+        "param": {}
+      },
+      {
+        "tool": "Alt Bichinhos_Get Spanish Alt Text",
+        "param": {}
+      },
+      {
+        "tool": "Alt Bichinhos_Get German Alt Text.",
+        "param": {}
+      },
+      {
+        "tool": "Alt Bichinhos_Get Portuguese Alt Text.",
+        "param": {}
+      },
+      {
+        "tool": "MikuAPI_getRandomImage",
+        "param": {}
+      },
+      {
+        "tool": "MikuAPI_getImage",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a phone enthusiast and I want to compare the specifications and prices of different phone models. Can you provide me with a list of phone models along with their specifications and prices? Additionally, I would like to know if there are any security vulnerabilities associated with the firmware of these phones.",
+    "reference": [
+      {
+        "tool": "CellPhones_GetPhonesByBrandId",
+        "param": {}
+      },
+      {
+        "tool": "CellPhones_GetPhoneDetails",
+        "param": {}
+      },
+      {
+        "tool": "CellPhones_GetBrands",
+        "param": {}
+      },
+      {
+        "tool": "lottery_Get Lottery List By Date",
+        "param": {}
+      },
+      {
+        "tool": "IoTVAS_get_config_issues",
+        "param": {}
+      },
+      {
+        "tool": "IoTVAS_get_weak_keys",
+        "param": {}
+      },
+      {
+        "tool": "IoTVAS_get_private_keys",
+        "param": {}
+      },
+      {
+        "tool": "Mobile Phone Specs Database_Get {Image} by {Phone Image id}",
+        "param": {}
+      },
+      {
+        "tool": "Mobile Phone Specs Database_Get {Specifications} by {Brand Name} and {Model Name}",
+        "param": {}
+      },
+      {
+        "tool": "Mobile Phone Specs Database_List  all {Models} by {Phone Brand}",
+        "param": {}
+      },
+      {
+        "tool": "openHUB_openHAB",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you fetch the name of the Leetcode user with the username 'mujtabah258'? I'm interested in knowing the user's name. Additionally, I would like to gather information about the word of the day from 'cd' as a source.",
+    "reference": [
+      {
+        "tool": "Events UEL_Ticket",
+        "param": {}
+      },
+      {
+        "tool": "SevenTraderAPI_Get - Countries",
+        "param": {}
+      },
+      {
+        "tool": "LeetcodeApi_getMediumQuestion",
+        "param": {}
+      },
+      {
+        "tool": "LeetcodeApi_getTotalSolved",
+        "param": {}
+      },
+      {
+        "tool": "LeetcodeApi_getName",
+        "param": {}
+      },
+      {
+        "tool": "Word of the day_Word of the day from cd",
+        "param": {}
+      },
+      {
+        "tool": "Word of the day_Get word of the day from multiple sources",
+        "param": {}
+      },
+      {
+        "tool": "Word of the day_Word of the day from pm",
+        "param": {}
+      },
+      {
+        "tool": "Bhagavad Gita_v3_Get all verse of chapter by chapter id",
+        "param": {}
+      },
+      {
+        "tool": "Bhagavad Gita_v3_Get chapter details  by id",
+        "param": {}
+      },
+      {
+        "tool": "Bhagavad Gita_v3_Get all chapters",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm writing a book and need some inspiration for the setting. Can you fetch the picture of the day from the Astronomy Picture of The day API to visualize different landscapes? Additionally, provide me with some interesting facts about the universe to incorporate into my story.",
+    "reference": [
+      {
+        "tool": "teste_getPetById",
+        "param": {}
+      },
+      {
+        "tool": "teste_getUserByName",
+        "param": {}
+      },
+      {
+        "tool": "teste_getOrderById",
+        "param": {}
+      },
+      {
+        "tool": "Astronomy Picture of The day_Picture Of The Day",
+        "param": {}
+      },
+      {
+        "tool": "Materials Platform for Data Science_MPDS",
+        "param": {}
+      },
+      {
+        "tool": "crossref_RecordCount",
+        "param": {}
+      },
+      {
+        "tool": "crossref_Search",
+        "param": {}
+      },
+      {
+        "tool": "crossref_DOI",
+        "param": {}
+      },
+      {
+        "tool": "Astronomy_Search",
+        "param": {}
+      },
+      {
+        "tool": "Astronomy_Get all bodies positions",
+        "param": {}
+      },
+      {
+        "tool": "Astronomy_Get positions for body",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am interested in learning more about DNA sequences and their corresponding amino acids. Can you provide me with the amino acid sequence for the DNA sequence 'ATCGCTAGTACG'? Additionally, I would like to know the mRNA sequence equivalent of the DNA sequence 'ATCGCTAGTACG'. Finally, could you give me some information about the tool 'dna2protein'?",
+    "reference": [
+      {
+        "tool": "Numerology-API_health",
+        "param": {}
+      },
+      {
+        "tool": "Numerology-API_info",
+        "param": {}
+      },
+      {
+        "tool": "Numerology-API_descriptions",
+        "param": {}
+      },
+      {
+        "tool": "Atmosphere nitrous oxide levels_Nitrous endpoint",
+        "param": {}
+      },
+      {
+        "tool": "dna2protein_DNA2AminoAcid",
+        "param": {}
+      },
+      {
+        "tool": "dna2protein_mRNA2DNA",
+        "param": {}
+      },
+      {
+        "tool": "dna2protein_DNA2mRNA",
+        "param": {}
+      },
+      {
+        "tool": "CarbonSutra_Airports by Keyword",
+        "param": {}
+      },
+      {
+        "tool": "CarbonSutra_Vehicles Makes",
+        "param": {}
+      },
+      {
+        "tool": "CarbonSutra_Vehicles Models",
+        "param": {}
+      },
+      {
+        "tool": "Beekeeping Research_Basic endpoint",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a road trip across the country. Can you give me the current weather conditions for my current location? Also, provide the astronomy data for today, including sunrise, sunset, moonrise, and moonset.",
+    "reference": [
+      {
+        "tool": "Ouranos_Predict Feature Forecast 1 Day",
+        "param": {}
+      },
+      {
+        "tool": "Ouranos_48 Hour Forecast",
+        "param": {}
+      },
+      {
+        "tool": "Ouranos_3 Day Forecast",
+        "param": {}
+      },
+      {
+        "tool": "Easy Weather_Current conditions (basic)",
+        "param": {}
+      },
+      {
+        "tool": "Easy Weather_Hourly forecast (48 hours)",
+        "param": {}
+      },
+      {
+        "tool": "Easy Weather_Current conditions (detailed)",
+        "param": {}
+      },
+      {
+        "tool": "havo_weatherendpoin",
+        "param": {}
+      },
+      {
+        "tool": "WeatherAPI.com_Realtime Weather API",
+        "param": {}
+      },
+      {
+        "tool": "WeatherAPI.com_Astronomy API",
+        "param": {}
+      },
+      {
+        "tool": "WeatherAPI.com_Future Weather API",
+        "param": {}
+      },
+      {
+        "tool": "weather_v14_weather",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to learn more about the Diablo 4 game and its features. Can you provide me with a list of Diablo 4 gameplays related to the druid topic? Additionally, tell me about the DAX functions used in Power BI.",
+    "reference": [
+      {
+        "tool": "Diablo4 Smartable_GetSponsorships",
+        "param": {}
+      },
+      {
+        "tool": "Diablo4 Smartable_GetGamesByTopic",
+        "param": {}
+      },
+      {
+        "tool": "Diablo4 Smartable_GetPeople",
+        "param": {}
+      },
+      {
+        "tool": "Livescan a Domain_Domain Information",
+        "param": {}
+      },
+      {
+        "tool": "Country List_Get All Country List",
+        "param": {}
+      },
+      {
+        "tool": "Phone_iso",
+        "param": {}
+      },
+      {
+        "tool": "Phone_directory",
+        "param": {}
+      },
+      {
+        "tool": "Phone_area-code",
+        "param": {}
+      },
+      {
+        "tool": "PowerBI_GetPeopleByTopic",
+        "param": {}
+      },
+      {
+        "tool": "PowerBI_GetFunctions",
+        "param": {}
+      },
+      {
+        "tool": "PowerBI_GetCommunitiesByTopic",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a surprise birthday party for my best friend and I want to make it extra special. Can you suggest some epic free games that we can play during the party? Also, find some giveaways related to gaming that I can include as gifts for the guests. Additionally, provide me with the recent matchmaking matches in Trackmania to add a competitive element to the party.",
+    "reference": [
+      {
+        "tool": "Epic Free Games_Get Epic Free Games",
+        "param": {}
+      },
+      {
+        "tool": "Epic Free Games_Get Epic Free Games Coming Soon",
+        "param": {}
+      },
+      {
+        "tool": "taboo-api_Get All Stored Categories",
+        "param": {}
+      },
+      {
+        "tool": "taboo-api_Get Taboo Words From Word",
+        "param": {}
+      },
+      {
+        "tool": "taboo-api_Get Result From Category",
+        "param": {}
+      },
+      {
+        "tool": "GamerPower_Filter & Group Giveaways",
+        "param": {}
+      },
+      {
+        "tool": "GamerPower_All live giveaways",
+        "param": {}
+      },
+      {
+        "tool": "GamerPower_Live giveaways by type",
+        "param": {}
+      },
+      {
+        "tool": "Trackmania_Matchmaking matches",
+        "param": {}
+      },
+      {
+        "tool": "Trackmania_Top Players by Matchmaking",
+        "param": {}
+      },
+      {
+        "tool": "Trackmania_Team Players",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to find movies with high ratings. Can you provide me with a list of top-rated movies along with their IMDb ratings and summaries? Please sort the results by their IMDb ratings in descending order.",
+    "reference": [
+      {
+        "tool": "List Movies_With RT Ratings",
+        "param": {}
+      },
+      {
+        "tool": "List Movies_Order By",
+        "param": {}
+      },
+      {
+        "tool": "List Movies_Sort By",
+        "param": {}
+      },
+      {
+        "tool": "List Movies_Genre",
+        "param": {}
+      },
+      {
+        "tool": "List Movies_Query Term",
+        "param": {}
+      },
+      {
+        "tool": "List Movies_Minimum Rating",
+        "param": {}
+      },
+      {
+        "tool": "List Movies_Quality",
+        "param": {}
+      },
+      {
+        "tool": "List Movies_Page",
+        "param": {}
+      },
+      {
+        "tool": "List Movies_Limit",
+        "param": {}
+      },
+      {
+        "tool": "List Movies_List Movies",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "My cousin is a react developer and looking for job opportunities in that field. Can you help me find react job openings? Additionally, I'm also interested in exploring data engineer positions. Can you provide me with a list of available data engineer jobs?",
+    "reference": [
+      {
+        "tool": "USA Jobs for IT_Full Stack Jobs",
+        "param": {}
+      },
+      {
+        "tool": "USA Jobs for IT_Data Engineer Jobs",
+        "param": {}
+      },
+      {
+        "tool": "USA Jobs for IT_Business Intelligence Jobs",
+        "param": {}
+      },
+      {
+        "tool": "USA Jobs for IT_Laravel Jobs",
+        "param": {}
+      },
+      {
+        "tool": "USA Jobs for IT_JavaScript Jobs",
+        "param": {}
+      },
+      {
+        "tool": "USA Jobs for IT_Java Jobs",
+        "param": {}
+      },
+      {
+        "tool": "USA Jobs for IT_NodeJs Jobs",
+        "param": {}
+      },
+      {
+        "tool": "USA Jobs for IT_Data Analyst Jobs",
+        "param": {}
+      },
+      {
+        "tool": "USA Jobs for IT_React Jobs",
+        "param": {}
+      },
+      {
+        "tool": "USA Jobs for IT_Angular Jobs",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Convert the hex color code 'ffffff' to HSL. After obtaining the HSL value, I would like to know the corresponding RGB color code as well as the CMYK code.",
+    "reference": [
+      {
+        "tool": "Convexity_hsl to rgb",
+        "param": {}
+      },
+      {
+        "tool": "Convexity_convert hsl",
+        "param": {}
+      },
+      {
+        "tool": "Convexity_rgb to cmyk",
+        "param": {}
+      },
+      {
+        "tool": "Convexity_rgb to hsl",
+        "param": {}
+      },
+      {
+        "tool": "Convexity_rgb to hex",
+        "param": {}
+      },
+      {
+        "tool": "Convexity_convert rgb",
+        "param": {}
+      },
+      {
+        "tool": "Convexity_convert hex",
+        "param": {}
+      },
+      {
+        "tool": "Convexity_hex to  rgb",
+        "param": {}
+      },
+      {
+        "tool": "Convexity_hex to cmyk",
+        "param": {}
+      },
+      {
+        "tool": "Convexity_hex to hsl",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am analyzing the properties of frames in an image. Can you guide me on how to use the API call to get the properties of frame 2 in an image named 'image5.bmp'? Also, please ensure that the image is stored in the 'frames' folder in my Aspose Cloud storage.",
+    "reference": [
+      {
+        "tool": "Aspose.Imaging Cloud_ConvertTiffToFax",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_ExtractImageFeatures",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_ModifyJpeg2000",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_FindImageDuplicates",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_RotateFlipImage",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_DownloadFile",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_GetImageFrame",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_ObjectExists",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_GetImageSearchStatus",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_GetImageFrameProperties",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "My company is planning to host live streams and we need to choose a player. Can you provide us with the available players? Display them on the first page with 20 items per page, sorted by their creation date in ascending order.",
+    "reference": [
+      {
+        "tool": "api.video_GET_analytics-videos-videoId",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_analytics-sessions-sessionId-events",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_videos-videoId-chapters-language",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_players",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_live-streams-liveStreamId",
+        "param": {}
+      },
+      {
+        "tool": "api.video_LIST-videos",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET-video-status",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_live-streams",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_players-playerId",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET-video",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am researching a specific series and I want to know the details of all the episodes in a particular season. The IMDb ID of the series is tt1234567 and the season number is 3. Can you fetch the episode details for me?",
+    "reference": [
+      {
+        "tool": "MoviesDatabase_/titles/{id}/crew",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/series/{seriesId}/{season}",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/episode/{id}",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}/main_actors",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/x/titles-by-ids",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}/aka",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/random",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/seasons/{seriesId}",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am a movie critic and I need to gather information about multiple movies. The IMDb IDs of the movies are tt1234567, tt9876543, tt2468135. Can you provide me with the base information for these movies?",
+    "reference": [
+      {
+        "tool": "MoviesDatabase_/titles/{id}/crew",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/series/{seriesId}/{season}",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/episode/{id}",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}/main_actors",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/x/titles-by-ids",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}/aka",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/random",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/seasons/{seriesId}",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning to send a package through Correo Argentino. Can you provide a list of cities in Argentina along with their state ISO codes? Additionally, I need to know the list of offices near the source postcode '54321'.",
+    "reference": [
+      {
+        "tool": "Transportistas de Argentina_/tracking/correo_argentino/result_task/:task_id",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/cities/states/:stateIsoCode",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/cities/postcode/:stateIsoCode/:postCode",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/cities/search/:stateIsoCode/:keyword",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/cities/states",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/quotes/city/correo_argentino/:weight/:stateIsoCodeSrc/:normalizeCityNameSrc/:stateIsoCodeDst/:normalizeCityNameDst",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/quotes/postcode/oca/:cuit/:operativa/:cost/:weight/:volume/:postCodeSrc/:postCodeDst",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/quotes/postcode/correo_argentino/:weight/:postCodeSrc/:postCodeDst",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/tracking/correo_argentino/create_task/:service/:tracking_code",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/offices/postcode/:service/:postCode",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you provide me with the details of the movies with the IMDb IDs tt1234567, tt9876543, and tt2468024? Additionally, give me the crew details and additional information for each movie.",
+    "reference": [
+      {
+        "tool": "MoviesDatabase_/titles/{id}/crew",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/series/{seriesId}/{season}",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/episode/{id}",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}/main_actors",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/x/titles-by-ids",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}/aka",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/random",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/{id}",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles",
+        "param": {}
+      },
+      {
+        "tool": "MoviesDatabase_/titles/seasons/{seriesId}",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to track user engagement for a specific session identified by the sessionId parameter using the GET_analytics-sessions-sessionId-events API. Can you provide me with the events related to that session? Additionally, I'm interested in retrieving the details of a specific player identified by the playerId parameter using the GET_players-playerId API.",
+    "reference": [
+      {
+        "tool": "api.video_GET_analytics-videos-videoId",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_analytics-sessions-sessionId-events",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_videos-videoId-chapters-language",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_players",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_live-streams-liveStreamId",
+        "param": {}
+      },
+      {
+        "tool": "api.video_LIST-videos",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET-video-status",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_live-streams",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET_players-playerId",
+        "param": {}
+      },
+      {
+        "tool": "api.video_GET-video",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm starting an e-commerce business in Argentina and need to track the shipping status of my orders. Can you help me create a tracking task for a package with the tracking code '123456789' using the Correo Argentino service? I want to retrieve the result for this task.",
+    "reference": [
+      {
+        "tool": "Transportistas de Argentina_/tracking/correo_argentino/result_task/:task_id",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/cities/states/:stateIsoCode",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/cities/postcode/:stateIsoCode/:postCode",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/cities/search/:stateIsoCode/:keyword",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/cities/states",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/quotes/city/correo_argentino/:weight/:stateIsoCodeSrc/:normalizeCityNameSrc/:stateIsoCodeDst/:normalizeCityNameDst",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/quotes/postcode/oca/:cuit/:operativa/:cost/:weight/:volume/:postCodeSrc/:postCodeDst",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/quotes/postcode/correo_argentino/:weight/:postCodeSrc/:postCodeDst",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/tracking/correo_argentino/create_task/:service/:tracking_code",
+        "param": {}
+      },
+      {
+        "tool": "Transportistas de Argentina_/offices/postcode/:service/:postCode",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I have an image named 'photo.jpg' and I want to rotate it 90 degrees clockwise and flip it vertically. Can you also save it in the 'edited_images' folder?",
+    "reference": [
+      {
+        "tool": "Aspose.Imaging Cloud_ConvertTiffToFax",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_ExtractImageFeatures",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_ModifyJpeg2000",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_FindImageDuplicates",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_RotateFlipImage",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_DownloadFile",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_GetImageFrame",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_ObjectExists",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_GetImageSearchStatus",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Imaging Cloud_GetImageFrameProperties",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm developing a photo editing app and I want to offer users the option to apply a charcoal filter to their images. Is there an API that can apply a charcoal effect to images? Additionally, I'd like to provide a 'wasted' effect where an image is distorted and overlaid with text. Is there an API that can help with that?",
+    "reference": [
+      {
+        "tool": "Image_charcoal_image_charcoal__get",
+        "param": {}
+      },
+      {
+        "tool": "Image_delete_image_delete__get",
+        "param": {}
+      },
+      {
+        "tool": "Image_rainbow_manip_rainbow__get",
+        "param": {}
+      },
+      {
+        "tool": "Image_test_app_deepfry__get",
+        "param": {}
+      },
+      {
+        "tool": "Image_wasted_image_wasted__get",
+        "param": {}
+      },
+      {
+        "tool": "Image_fedora_image_fedora__get",
+        "param": {}
+      },
+      {
+        "tool": "Image_get_thought_image_thoughtimage__get",
+        "param": {}
+      },
+      {
+        "tool": "Image_obama_image_obama__get",
+        "param": {}
+      },
+      {
+        "tool": "Image_get_captcha_image_captcha__get",
+        "param": {}
+      },
+      {
+        "tool": "Image_gay_image_gay__get",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you provide me with the total number of icons available at Flaticon? Additionally, I would like to search for packs related to the topic of 'education' and order the results by priority.",
+    "reference": [
+      {
+        "tool": "Flaticon_totalIconsSelection",
+        "param": {}
+      },
+      {
+        "tool": "Flaticon_searchPacks",
+        "param": {}
+      },
+      {
+        "tool": "Flaticon_searchIcons",
+        "param": {}
+      },
+      {
+        "tool": "Flaticon_pack",
+        "param": {}
+      },
+      {
+        "tool": "Flaticon_packs",
+        "param": {}
+      },
+      {
+        "tool": "Flaticon_icons",
+        "param": {}
+      },
+      {
+        "tool": "Flaticon_styles",
+        "param": {}
+      },
+      {
+        "tool": "Flaticon_totalIcons",
+        "param": {}
+      },
+      {
+        "tool": "Flaticon_totalIconsPremium",
+        "param": {}
+      },
+      {
+        "tool": "Flaticon_icon",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Please perform a ping test on the domain 'google.com' and let me know the response time in JSON format. Additionally, check if the domain 'microsoft.com' is blocked by the Great Firewall of China. Provide the result in XML format.",
+    "reference": [
+      {
+        "tool": "ViewDNS_DNS Record Lookup",
+        "param": {}
+      },
+      {
+        "tool": "ViewDNS_Ping",
+        "param": {}
+      },
+      {
+        "tool": "ViewDNS_IP Location Finder",
+        "param": {}
+      },
+      {
+        "tool": "ViewDNS_Chinese Firewall Test",
+        "param": {}
+      },
+      {
+        "tool": "ViewDNS_Spam Database Lookup",
+        "param": {}
+      },
+      {
+        "tool": "ViewDNS_Free Email Lookup",
+        "param": {}
+      },
+      {
+        "tool": "ViewDNS_MAC Address Lookup",
+        "param": {}
+      },
+      {
+        "tool": "ViewDNS_Abuse Contact Lookup",
+        "param": {}
+      },
+      {
+        "tool": "ViewDNS_DNS Propagation Checker",
+        "param": {}
+      },
+      {
+        "tool": "ViewDNS_Iran Firewall Test",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a football enthusiast and I want to know more about Lionel Messi's career. Can you provide me with information about Messi's clubs, managers, teammates, and referees? I'm also curious about any notable transfers he has made.",
+    "reference": [
+      {
+        "tool": "TheClique_Songkick concert",
+        "param": {}
+      },
+      {
+        "tool": "TheClique_Songkick artist",
+        "param": {}
+      },
+      {
+        "tool": "TheClique_Songkick festivals",
+        "param": {}
+      },
+      {
+        "tool": "TheClique_Transfermarkt search",
+        "param": {}
+      },
+      {
+        "tool": "TheClique_List Artist Concerts",
+        "param": {}
+      },
+      {
+        "tool": "TheClique_Get Artist Overview",
+        "param": {}
+      },
+      {
+        "tool": "TheClique_Transfermarkt details",
+        "param": {}
+      },
+      {
+        "tool": "TheClique_SongKick search Artist",
+        "param": {}
+      },
+      {
+        "tool": "TheClique_TuneFind for Details",
+        "param": {}
+      },
+      {
+        "tool": "TheClique_Get info about artist",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a fan of the streamer 'gmhikaru' on Kick.com and I want to explore their channel. Can you provide me with the channel clips and the channel details? I'm eager to learn more about their content.",
+    "reference": [
+      {
+        "tool": "Kick.com API | Kick API_Get Channel Clips",
+        "param": {}
+      },
+      {
+        "tool": "Kick.com API | Kick API_Get Chat User (like user from chat)",
+        "param": {}
+      },
+      {
+        "tool": "Kick.com API | Kick API_Get Chatroom Rules",
+        "param": {}
+      },
+      {
+        "tool": "Kick.com API | Kick API_Get Channel Links",
+        "param": {}
+      },
+      {
+        "tool": "Kick.com API | Kick API_Get Channel Polls",
+        "param": {}
+      },
+      {
+        "tool": "Kick.com API | Kick API_Get Channel Chatroom",
+        "param": {}
+      },
+      {
+        "tool": "Kick.com API | Kick API_Get Channel Emotes",
+        "param": {}
+      },
+      {
+        "tool": "Kick.com API | Kick API_Get Channel Livestream Info",
+        "param": {}
+      },
+      {
+        "tool": "Kick.com API | Kick API_Get Channel Details",
+        "param": {}
+      },
+      {
+        "tool": "Kick.com API | Kick API_Get Chat Messages",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a golf tournament and I need information about the players. Can you provide me with the world rankings of the top players for the year 2022? Additionally, include the FedExCup points earned by these players and their recent scorecards.",
+    "reference": [
+      {
+        "tool": "Live Golf Data_World Ranking",
+        "param": {}
+      },
+      {
+        "tool": "Live Golf Data_earnings",
+        "param": {}
+      },
+      {
+        "tool": "Live Golf Data_points",
+        "param": {}
+      },
+      {
+        "tool": "Live Golf Data_tournaments",
+        "param": {}
+      },
+      {
+        "tool": "Live Golf Data_players",
+        "param": {}
+      },
+      {
+        "tool": "Live Golf Data_schedules",
+        "param": {}
+      },
+      {
+        "tool": "Live Golf Data_organizations",
+        "param": {}
+      },
+      {
+        "tool": "Live Golf Data_FedExCup Ranking",
+        "param": {}
+      },
+      {
+        "tool": "Live Golf Data_scorecards",
+        "param": {}
+      },
+      {
+        "tool": "Live Golf Data_leaderboards",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "My company is hosting a rugby event and we need to provide pre-match form information to the participants. Can you fetch the pre-match form for a specific rugby match? We would also like to see the incidents that occurred during the match.",
+    "reference": [
+      {
+        "tool": "RugbyAPI2_LeagueNextMatches",
+        "param": {}
+      },
+      {
+        "tool": "RugbyAPI2_LeagueMedia",
+        "param": {}
+      },
+      {
+        "tool": "RugbyAPI2_Categories",
+        "param": {}
+      },
+      {
+        "tool": "RugbyAPI2_CategoryTournaments",
+        "param": {}
+      },
+      {
+        "tool": "RugbyAPI2_LeagueLogoImage",
+        "param": {}
+      },
+      {
+        "tool": "RugbyAPI2_TeamMedia",
+        "param": {}
+      },
+      {
+        "tool": "RugbyAPI2_MatchIncidents",
+        "param": {}
+      },
+      {
+        "tool": "RugbyAPI2_Match",
+        "param": {}
+      },
+      {
+        "tool": "RugbyAPI2_PreMatchForm",
+        "param": {}
+      },
+      {
+        "tool": "RugbyAPI2_CategorySchedules",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to explore trending content on social media. Can you provide me with the current trending feed of videos? I would like to limit the output to 20 records. Please include the direct URLs to the videos and their statistics. Additionally, if possible, I would like to filter the feed based on a specific hashtag, such as #summer.",
+    "reference": [
+      {
+        "tool": "Social Media Data TT_User feed (Video posts)",
+        "param": {}
+      },
+      {
+        "tool": "Social Media Data TT_User feed (Video posts) V2",
+        "param": {}
+      },
+      {
+        "tool": "Social Media Data TT_Real-time hashtag search",
+        "param": {}
+      },
+      {
+        "tool": "Social Media Data TT_Direct post url",
+        "param": {}
+      },
+      {
+        "tool": "Social Media Data TT_Hashtag feed (Video posts)",
+        "param": {}
+      },
+      {
+        "tool": "Social Media Data TT_Hashtag metadata (information)",
+        "param": {}
+      },
+      {
+        "tool": "Social Media Data TT_Hashtag metadata (information) V2",
+        "param": {}
+      },
+      {
+        "tool": "Social Media Data TT_Trending feed (Video posts)",
+        "param": {}
+      },
+      {
+        "tool": "Social Media Data TT_Hashtag feed (Video posts) V2",
+        "param": {}
+      },
+      {
+        "tool": "Social Media Data TT_Video post metadata",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am a flight enthusiast and I want to know the live positioning of an aircraft with the ICAO HEX code 'ABCD'. Can you fetch this information for me? Additionally, provide the total number of known aircraft in the database.",
+    "reference": [
+      {
+        "tool": "FachaAPI_Total Live tracked Aircraft",
+        "param": {}
+      },
+      {
+        "tool": "FachaAPI_Live NATO Air Policing Aircraft",
+        "param": {}
+      },
+      {
+        "tool": "FachaAPI_Live Emergency Aircraft",
+        "param": {}
+      },
+      {
+        "tool": "FachaAPI_Live Aircraft by Squawk",
+        "param": {}
+      },
+      {
+        "tool": "FachaAPI_Live Aircraft by REG",
+        "param": {}
+      },
+      {
+        "tool": "FachaAPI_Live Aircraft by ICAO",
+        "param": {}
+      },
+      {
+        "tool": "FachaAPI_Aircraft Database Stats",
+        "param": {}
+      },
+      {
+        "tool": "FachaAPI_Aircraft Details by REG",
+        "param": {}
+      },
+      {
+        "tool": "FachaAPI_Aircraft Details by ICAO",
+        "param": {}
+      },
+      {
+        "tool": "FachaAPI_Temporary Email Stats",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to download the translated document for the job with ID 'd0c30471-7c70-45d4-bcc1-a7773cb352b' in the project with ID 'bc141454-5949-401b-9c05-7591ee2f562'. Can you help me with that?",
+    "reference": [
+      {
+        "tool": "TEXTKING Translation_List topics",
+        "param": {}
+      },
+      {
+        "tool": "TEXTKING Translation_List projects",
+        "param": {}
+      },
+      {
+        "tool": "TEXTKING Translation_Download source document",
+        "param": {}
+      },
+      {
+        "tool": "TEXTKING Translation_List target languages",
+        "param": {}
+      },
+      {
+        "tool": "TEXTKING Translation_Get price info for word count",
+        "param": {}
+      },
+      {
+        "tool": "TEXTKING Translation_Get project",
+        "param": {}
+      },
+      {
+        "tool": "TEXTKING Translation_Get topic",
+        "param": {}
+      },
+      {
+        "tool": "TEXTKING Translation_Get job",
+        "param": {}
+      },
+      {
+        "tool": "TEXTKING Translation_Download translated document",
+        "param": {}
+      },
+      {
+        "tool": "TEXTKING Translation_List a project's jobs",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to view the details of a specific item in the cart. The catalog_item_id of the item is '56789' and it is in the socket with the socket_id 'def456'. Can you please show me the image and description of this item?",
+    "reference": [
+      {
+        "tool": "CatalogAPI_Remove Item",
+        "param": {}
+      },
+      {
+        "tool": "CatalogAPI_Empty",
+        "param": {}
+      },
+      {
+        "tool": "CatalogAPI_List Available Catalogs",
+        "param": {}
+      },
+      {
+        "tool": "CatalogAPI_Order List",
+        "param": {}
+      },
+      {
+        "tool": "CatalogAPI_View Item",
+        "param": {}
+      },
+      {
+        "tool": "CatalogAPI_Unlock",
+        "param": {}
+      },
+      {
+        "tool": "CatalogAPI_View",
+        "param": {}
+      },
+      {
+        "tool": "CatalogAPI_Validate",
+        "param": {}
+      },
+      {
+        "tool": "CatalogAPI_Set Address",
+        "param": {}
+      },
+      {
+        "tool": "CatalogAPI_Set Item Quantity",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "As an online retailer, I want to offer a wide range of products to my customers. Can you provide me with a list of products in the '100003819' category? I would like to filter the products by brand, attributes, and price range. Additionally, I need the feedback from customers who have purchased these products, including their feedback content, ratings, and photos. Thank you!",
+    "reference": [
+      {
+        "tool": "Magic AliExpress_/api/product/{productID}/feedbacks",
+        "param": {}
+      },
+      {
+        "tool": "Magic AliExpress_/api/shipping/{productID}",
+        "param": {}
+      },
+      {
+        "tool": "Magic AliExpress_/api/category/{categoryId}/products",
+        "param": {}
+      },
+      {
+        "tool": "Magic AliExpress_/api/bestSales/SortedByNewest",
+        "param": {}
+      },
+      {
+        "tool": "Magic AliExpress_/api/product/{productId}/historic/prices",
+        "param": {}
+      },
+      {
+        "tool": "Magic AliExpress_/api/product/{productId}/historic/sales",
+        "param": {}
+      },
+      {
+        "tool": "Magic AliExpress_/api/v2/categories",
+        "param": {}
+      },
+      {
+        "tool": "Magic AliExpress_/api/currenciesAvailable",
+        "param": {}
+      },
+      {
+        "tool": "Magic AliExpress_/api/countriesAvailableToShipping",
+        "param": {}
+      },
+      {
+        "tool": "Magic AliExpress_/api/bestSales/product/{productID}/salesHistory",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am a financial consultant and I need real-time data on commodities futures prices. Can you provide me with the latest quotes for metals, softs, energy, grains, and meats? Additionally, I would like to know the commodity groups these futures belong to.",
+    "reference": [
+      {
+        "tool": "Investing_Metals Futures Prices",
+        "param": {}
+      },
+      {
+        "tool": "Investing_Softs Futures Prices",
+        "param": {}
+      },
+      {
+        "tool": "Investing_Energy Futures Prices",
+        "param": {}
+      },
+      {
+        "tool": "Investing_Get Commodities",
+        "param": {}
+      },
+      {
+        "tool": "Investing_Commodity Groups",
+        "param": {}
+      },
+      {
+        "tool": "Investing_Grains Futures Prices",
+        "param": {}
+      },
+      {
+        "tool": "Investing_Commodity Indices",
+        "param": {}
+      },
+      {
+        "tool": "Investing_Meats Futures Prices",
+        "param": {}
+      },
+      {
+        "tool": "Investing_Real Time Commodity Futures Prices",
+        "param": {}
+      },
+      {
+        "tool": "Investing_List of Countries for Stocks",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to compile a list of the most popular tweets about a recent event on Twitter. Can you help me search for the top tweets related to the event and also retrieve the retweets, likes, and comments for each of these tweets? It would be great if you could provide the usernames of the users who retweeted and commented on the tweets.",
+    "reference": [
+      {
+        "tool": "Twitter_v5_Get User Replies",
+        "param": {}
+      },
+      {
+        "tool": "Twitter_v5_Get User Tweets",
+        "param": {}
+      },
+      {
+        "tool": "Twitter_v5_Autocomplete",
+        "param": {}
+      },
+      {
+        "tool": "Twitter_v5_Search Twitter",
+        "param": {}
+      },
+      {
+        "tool": "Twitter_v5_Get Post Retweets",
+        "param": {}
+      },
+      {
+        "tool": "Twitter_v5_Get Post Quotes",
+        "param": {}
+      },
+      {
+        "tool": "Twitter_v5_Get Post Comments",
+        "param": {}
+      },
+      {
+        "tool": "Twitter_v5_Get Post Likes",
+        "param": {}
+      },
+      {
+        "tool": "Twitter_v5_Get User Followings",
+        "param": {}
+      },
+      {
+        "tool": "Twitter_v5_Get User Followers",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm curious about the popularity of a specific hashtag on TikTok. Can you provide me with the hashtag data for the challenge 'food'? Additionally, fetch me the music data for a specific music ID.",
+    "reference": [
+      {
+        "tool": "TikTok_Solutions_General Trending",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_Music Data by ID",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_Video Data by URL",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_Hashtag Feed by ID",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_User Data by SecUID",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_Hashtag Feed by Name",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_User Feed by Name",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_User Feed by ID",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_User Data by Name",
+        "param": {}
+      },
+      {
+        "tool": "TikTok_Solutions_Hashtag Data by Name",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning to bet on tomorrow's football matches. Can you share tomorrow's over 2.5 goals predictions? I want to increase my chances of winning. Also, if possible, please provide me with yesterday's BTTS/Goal Goal predictions.",
+    "reference": [
+      {
+        "tool": "168predict VIP Football Predictions_Tomorrow Sure VIP BTTS/ Goal Goal",
+        "param": {}
+      },
+      {
+        "tool": "168predict VIP Football Predictions_Yesterday Sure VIP BTTS/Goal Goal",
+        "param": {}
+      },
+      {
+        "tool": "168predict VIP Football Predictions_Today Sure VIP BTTS/Goal Goal",
+        "param": {}
+      },
+      {
+        "tool": "168predict VIP Football Predictions_Yesterday Sure VIP Over 2.5 Goals",
+        "param": {}
+      },
+      {
+        "tool": "168predict VIP Football Predictions_Tomorrow Sure VIP Over 2.5 Goals",
+        "param": {}
+      },
+      {
+        "tool": "168predict VIP Football Predictions_Today Sure VIP Over 2.5 Goals",
+        "param": {}
+      },
+      {
+        "tool": "168predict VIP Football Predictions_Tomorrow Sure VIP Over 1.5 Goals",
+        "param": {}
+      },
+      {
+        "tool": "168predict VIP Football Predictions_Yesterday Sure VIP Over 1.5 Goals",
+        "param": {}
+      },
+      {
+        "tool": "168predict VIP Football Predictions_Today Sure VIP Over 1.5 Goals",
+        "param": {}
+      },
+      {
+        "tool": "168predict VIP Football Predictions_Yesterday Sure VIP Under 3.5 Goals",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning to organize a football tournament in my city. Can you provide me with a list of clubs that have participated in the competition 'GB1'? I also need the performance details of the players in the tournament, including their goals, assists, yellow cards, and red cards.",
+    "reference": [
+      {
+        "tool": "TransferMarkt DB_Player Progress",
+        "param": {}
+      },
+      {
+        "tool": "TransferMarkt DB_European champions",
+        "param": {}
+      },
+      {
+        "tool": "TransferMarkt DB_UEFA rankings",
+        "param": {}
+      },
+      {
+        "tool": "TransferMarkt DB_List of Champions",
+        "param": {}
+      },
+      {
+        "tool": "TransferMarkt DB_List of clubs",
+        "param": {}
+      },
+      {
+        "tool": "TransferMarkt DB_Player Performance details",
+        "param": {}
+      },
+      {
+        "tool": "TransferMarkt DB_Referee profile",
+        "param": {}
+      },
+      {
+        "tool": "TransferMarkt DB_Competition Standings",
+        "param": {}
+      },
+      {
+        "tool": "TransferMarkt DB_Player Info",
+        "param": {}
+      },
+      {
+        "tool": "TransferMarkt DB_World Cup champions",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a cryptocurrency trader and I need real-time data on the most mentioned coins and their sentiment. Can you retrieve the top coins by mentions and their mentions value? Additionally, fetch the top coins by sentiment change in the last 24 hours.",
+    "reference": [
+      {
+        "tool": "Crowdsense_Get Top Coins By Followers",
+        "param": {}
+      },
+      {
+        "tool": "Crowdsense_Get Top Coins By Sentiment",
+        "param": {}
+      },
+      {
+        "tool": "Crowdsense_Get Daily Influencer Posts by Coin Ticker",
+        "param": {}
+      },
+      {
+        "tool": "Crowdsense_Get Coin Metrics By Name",
+        "param": {}
+      },
+      {
+        "tool": "Crowdsense_Get Coin Metrics By Ticker",
+        "param": {}
+      },
+      {
+        "tool": "Crowdsense_Get Top Coins By Followers Change",
+        "param": {}
+      },
+      {
+        "tool": "Crowdsense_Get Top Coins By Mentions Change",
+        "param": {}
+      },
+      {
+        "tool": "Crowdsense_Get Top Coins By Mentions",
+        "param": {}
+      },
+      {
+        "tool": "Crowdsense_Get Top Coins By Sentiment Change",
+        "param": {}
+      },
+      {
+        "tool": "Crowdsense_Get Coin Historical Metrics By Name",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a fan of a specific baseball team and would like to see the media related to the team. Can you fetch the media content for the team with ID 3633? I'm particularly interested in images, videos, and highlights.",
+    "reference": [
+      {
+        "tool": "BaseballApi_TeamNearMatches",
+        "param": {}
+      },
+      {
+        "tool": "BaseballApi_get-manager-placeholder",
+        "param": {}
+      },
+      {
+        "tool": "BaseballApi_TeamLastMatches",
+        "param": {}
+      },
+      {
+        "tool": "BaseballApi_LeagueLastMatches",
+        "param": {}
+      },
+      {
+        "tool": "BaseballApi_MatchVotes",
+        "param": {}
+      },
+      {
+        "tool": "BaseballApi_TeamMedia",
+        "param": {}
+      },
+      {
+        "tool": "BaseballApi_HeadToHeadMatches",
+        "param": {}
+      },
+      {
+        "tool": "BaseballApi_PreMatchForm",
+        "param": {}
+      },
+      {
+        "tool": "BaseballApi_TeamPlayers",
+        "param": {}
+      },
+      {
+        "tool": "BaseballApi_LeagueHomeTeamEvents",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a sports enthusiast, and I want to know the number of games scheduled for today in different sports. Can you provide me with this information? Additionally, I would like to know the countries that support the sport of ice hockey. Please include the list of countries as well.",
+    "reference": [
+      {
+        "tool": "ViperScore_Get game statistics",
+        "param": {}
+      },
+      {
+        "tool": "ViperScore_Get game lineup",
+        "param": {}
+      },
+      {
+        "tool": "ViperScore_Get best player",
+        "param": {}
+      },
+      {
+        "tool": "ViperScore_Get pregame form",
+        "param": {}
+      },
+      {
+        "tool": "ViperScore_Get game details",
+        "param": {}
+      },
+      {
+        "tool": "ViperScore_Get scheduled games",
+        "param": {}
+      },
+      {
+        "tool": "ViperScore_Get live games",
+        "param": {}
+      },
+      {
+        "tool": "ViperScore_Get countries by sport",
+        "param": {}
+      },
+      {
+        "tool": "ViperScore_Get number of games today",
+        "param": {}
+      },
+      {
+        "tool": "ViperScore_Get all competitions",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you retrieve the stock price and details for the symbol GOOGL? Also, fetch the conversion rate from USD to JPY for an amount of 1254.",
+    "reference": [
+      {
+        "tool": "YH Finance Complete_Full Stock Price",
+        "param": {}
+      },
+      {
+        "tool": "YH Finance Complete_Upgrade Downgrade History",
+        "param": {}
+      },
+      {
+        "tool": "YH Finance Complete_calendar Events",
+        "param": {}
+      },
+      {
+        "tool": "YH Finance Complete_Earnings",
+        "param": {}
+      },
+      {
+        "tool": "YH Finance Complete_Balansheet/Financials",
+        "param": {}
+      },
+      {
+        "tool": "YH Finance Complete_Conversion Rates",
+        "param": {}
+      },
+      {
+        "tool": "YH Finance Complete_YH Historical",
+        "param": {}
+      },
+      {
+        "tool": "YH Finance Complete_Summary Detail",
+        "param": {}
+      },
+      {
+        "tool": "YH Finance Complete_Stock Price",
+        "param": {}
+      },
+      {
+        "tool": "YH Finance Complete_Currency Converter",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to analyze the income statement and the balance sheet of Apple (AAPL) for the last quarter. Additionally, I need the current composition of executives and the amount of current shares float.",
+    "reference": [
+      {
+        "tool": "Holistic Finance - Stock Data_Stock ownership",
+        "param": {}
+      },
+      {
+        "tool": "Holistic Finance - Stock Data_Holder",
+        "param": {}
+      },
+      {
+        "tool": "Holistic Finance - Stock Data_Executives",
+        "param": {}
+      },
+      {
+        "tool": "Holistic Finance - Stock Data_Shares float",
+        "param": {}
+      },
+      {
+        "tool": "Holistic Finance - Stock Data_Profile",
+        "param": {}
+      },
+      {
+        "tool": "Holistic Finance - Stock Data_Income",
+        "param": {}
+      },
+      {
+        "tool": "Holistic Finance - Stock Data_Cashflow",
+        "param": {}
+      },
+      {
+        "tool": "Holistic Finance - Stock Data_Balance",
+        "param": {}
+      },
+      {
+        "tool": "Holistic Finance - Stock Data_Crypto symbol",
+        "param": {}
+      },
+      {
+        "tool": "Holistic Finance - Stock Data_Forex symbol",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm interested in social media news in Dutch. Can you give me the latest updates? Additionally, I would like to know what's happening on social media in Japanese. Please keep me informed.",
+    "reference": [
+      {
+        "tool": "OneLike_Social Media News in Russian",
+        "param": {}
+      },
+      {
+        "tool": "OneLike_Social Media News in Portuguese",
+        "param": {}
+      },
+      {
+        "tool": "OneLike_Social Media News in Dutch",
+        "param": {}
+      },
+      {
+        "tool": "OneLike_Social Media News in Japanese",
+        "param": {}
+      },
+      {
+        "tool": "OneLike_Social Media News in Italian",
+        "param": {}
+      },
+      {
+        "tool": "OneLike_Social Media News in Indonesian",
+        "param": {}
+      },
+      {
+        "tool": "OneLike_Social Media News in Hindi",
+        "param": {}
+      },
+      {
+        "tool": "OneLike_Social Media News in French",
+        "param": {}
+      },
+      {
+        "tool": "OneLike_Social Media News in Spanish",
+        "param": {}
+      },
+      {
+        "tool": "OneLike_Social Media News in German",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a sports journalist working on an article about baseball leagues. Can you provide me with information on all the baseball leagues, including their names, abbreviations, season dates, and number of teams? It would be great to have the team affiliates and venues for each league as well.",
+    "reference": [
+      {
+        "tool": "Baseball_game",
+        "param": {}
+      },
+      {
+        "tool": "Baseball_game-playbyplay/{gamePk}",
+        "param": {}
+      },
+      {
+        "tool": "Baseball_game-matrix/{gamePk}",
+        "param": {}
+      },
+      {
+        "tool": "Baseball_game-probability/{gamePk}",
+        "param": {}
+      },
+      {
+        "tool": "Baseball_game-boxscore/{gamePk}",
+        "param": {}
+      },
+      {
+        "tool": "Baseball_schedule",
+        "param": {}
+      },
+      {
+        "tool": "Baseball_teams-affiliates/{teamIds}",
+        "param": {}
+      },
+      {
+        "tool": "Baseball_teams-coaches/{teamIds}",
+        "param": {}
+      },
+      {
+        "tool": "Baseball_leagues",
+        "param": {}
+      },
+      {
+        "tool": "Baseball_venues",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm curious about the stream details for asmongold. Can you fetch the stream information including the game name, number of viewers, language, and stream title? Additionally, please let me know if the stream contains mature content.",
+    "reference": [
+      {
+        "tool": "gwyo-twitch_Get Stream Game Name",
+        "param": {}
+      },
+      {
+        "tool": "gwyo-twitch_Get Stream Mature Content Status",
+        "param": {}
+      },
+      {
+        "tool": "gwyo-twitch_Get Stream Number of Viewers",
+        "param": {}
+      },
+      {
+        "tool": "gwyo-twitch_Get All Active Stream Infos",
+        "param": {}
+      },
+      {
+        "tool": "gwyo-twitch_Get Stream Language",
+        "param": {}
+      },
+      {
+        "tool": "gwyo-twitch_Get All Channel Infos",
+        "param": {}
+      },
+      {
+        "tool": "gwyo-twitch_Get Channel Description",
+        "param": {}
+      },
+      {
+        "tool": "gwyo-twitch_Get Channel Total Views",
+        "param": {}
+      },
+      {
+        "tool": "gwyo-twitch_Get Channel Broadcaster Type",
+        "param": {}
+      },
+      {
+        "tool": "gwyo-twitch_Get Stream Title",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm organizing a party and need some upbeat songs to create a playlist. Can you suggest some trending songs and artists? I would like to include the top songs and videos from different genres. Please provide me with a list of trending music.",
+    "reference": [
+      {
+        "tool": "Youtube Music API (Detailed)_Get Watch Playlist",
+        "param": {}
+      },
+      {
+        "tool": "Youtube Music API (Detailed)_Get Lyrics",
+        "param": {}
+      },
+      {
+        "tool": "Youtube Music API (Detailed)_Get Song Related",
+        "param": {}
+      },
+      {
+        "tool": "Youtube Music API (Detailed)_Get Song",
+        "param": {}
+      },
+      {
+        "tool": "Youtube Music API (Detailed)_Get User Playlists",
+        "param": {}
+      },
+      {
+        "tool": "Youtube Music API (Detailed)_Get User",
+        "param": {}
+      },
+      {
+        "tool": "Youtube Music API (Detailed)_Get Album",
+        "param": {}
+      },
+      {
+        "tool": "Youtube Music API (Detailed)_Get Artist Albums",
+        "param": {}
+      },
+      {
+        "tool": "Youtube Music API (Detailed)_Get Artist",
+        "param": {}
+      },
+      {
+        "tool": "Youtube Music API (Detailed)_Trends",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm working on a data visualization project and I need some random data. Can you generate a random array of numbers and a random password? Additionally, provide a random color and a random quote.",
+    "reference": [
+      {
+        "tool": "Random Chunk API_getRandomColor",
+        "param": {}
+      },
+      {
+        "tool": "Random Chunk API_getRandomQuote",
+        "param": {}
+      },
+      {
+        "tool": "Random Chunk API_getRandomArray",
+        "param": {}
+      },
+      {
+        "tool": "Random Chunk API_getRandomWord",
+        "param": {}
+      },
+      {
+        "tool": "Random Chunk API_getRandomTvshow",
+        "param": {}
+      },
+      {
+        "tool": "Random Chunk API_getRandomMovie",
+        "param": {}
+      },
+      {
+        "tool": "Random Chunk API_getRandomUser",
+        "param": {}
+      },
+      {
+        "tool": "Random Chunk API_getRandomName",
+        "param": {}
+      },
+      {
+        "tool": "Random Chunk API_getRandomDate",
+        "param": {}
+      },
+      {
+        "tool": "Random Chunk API_getRandomPassword",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a film student doing research on videos with the tag 'animation'. Can you provide me with videos that have this tag? I would like to see the most commented videos first.",
+    "reference": [
+      {
+        "tool": "Vimeo_GetRelatedChannels",
+        "param": {}
+      },
+      {
+        "tool": "Vimeo_GetVideoFromUser",
+        "param": {}
+      },
+      {
+        "tool": "Vimeo_GetVideosByTag",
+        "param": {}
+      },
+      {
+        "tool": "Vimeo_GetAllChannels",
+        "param": {}
+      },
+      {
+        "tool": "Vimeo_GetChannelVideos",
+        "param": {}
+      },
+      {
+        "tool": "Vimeo_GetRelatedTags",
+        "param": {}
+      },
+      {
+        "tool": "Vimeo_SearchVideos",
+        "param": {}
+      },
+      {
+        "tool": "Vimeo_GetChannelInfo",
+        "param": {}
+      },
+      {
+        "tool": "Vimeo_GetRelatedPeople",
+        "param": {}
+      },
+      {
+        "tool": "Vimeo_GetVideosComment",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am planning to attend a cricket match next month. Can you provide me with the match schedules for August 2022? Along with that, I would like to know the overall top players in the tournament and their statistics.",
+    "reference": [
+      {
+        "tool": "CricketAPI2_LeagueOverallTopPlayers",
+        "param": {}
+      },
+      {
+        "tool": "CricketAPI2_LeagueTotalTeamEvents",
+        "param": {}
+      },
+      {
+        "tool": "CricketAPI2_PreMatchForm",
+        "param": {}
+      },
+      {
+        "tool": "CricketAPI2_get-player-placeholder",
+        "param": {}
+      },
+      {
+        "tool": "CricketAPI2_Categories",
+        "param": {}
+      },
+      {
+        "tool": "CricketAPI2_LeagueNextMatches",
+        "param": {}
+      },
+      {
+        "tool": "CricketAPI2_TeamLastMatches",
+        "param": {}
+      },
+      {
+        "tool": "CricketAPI2_MatchDetails",
+        "param": {}
+      },
+      {
+        "tool": "CricketAPI2_ManagerPlaceholderImage",
+        "param": {}
+      },
+      {
+        "tool": "CricketAPI2_MatchSchedules",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a fan of female fighters in mixed martial arts and I'm looking for a placeholder image. Can you provide me with a female fighter placeholder image? Additionally, I would like to know the last events for a specific team.",
+    "reference": [
+      {
+        "tool": "MMAAPI_FemaleFighterImagePlaceholder",
+        "param": {}
+      },
+      {
+        "tool": "MMAAPI_TeamImage",
+        "param": {}
+      },
+      {
+        "tool": "MMAAPI_TeamDetails",
+        "param": {}
+      },
+      {
+        "tool": "MMAAPI_TeamNextEvents",
+        "param": {}
+      },
+      {
+        "tool": "MMAAPI_EventStatistics",
+        "param": {}
+      },
+      {
+        "tool": "MMAAPI_TournamentNextMainEvents",
+        "param": {}
+      },
+      {
+        "tool": "MMAAPI_MaleFighterImagePlaceholder",
+        "param": {}
+      },
+      {
+        "tool": "MMAAPI_EventDetails",
+        "param": {}
+      },
+      {
+        "tool": "MMAAPI_TeamLastEvents",
+        "param": {}
+      },
+      {
+        "tool": "MMAAPI_MmaOctogonImage",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "My family is interested in investing in a fund and they need detailed information. Can you provide them with the recent investment rating change, credit quality, highest rated investments, and product involvement for the fund? The securityId is F00000O2CG.",
+    "reference": [
+      {
+        "tool": "Morning Star_{type}/parent/get-recent-investment-rating-change",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/portfolio/get-credit-quality",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/price/get-other-fees",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/parent/get-highest-rated-investments",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/sustainability/get-product-involvement",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/analysis/get-comparables",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_articles/list",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_articles/get-details",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_news/get-details",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_news/list",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to know the calendar events, cash flow statements, and recommendation trends for Apple Inc. Can you assist me with this financial information?",
+    "reference": [
+      {
+        "tool": "Yahoo Finance_v2_stock/index-trend",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/cashflow-statement",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/profile",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/calendar-events",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/balance-sheet",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/recommendation-trend",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/net-share-purchase-activity",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/institution-ownership",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/sec-filings",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/earnings",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Let's say I'm a financial consultant working with a client who wants to invest in Apple Inc. I need to provide them with a comprehensive overview of the company's financials. Can you assist me by gathering the asset profile, recommendation trends, net share purchase activity, and earnings information for Apple Inc.?",
+    "reference": [
+      {
+        "tool": "Yahoo Finance_v2_stock/index-trend",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/cashflow-statement",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/profile",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/calendar-events",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/balance-sheet",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/recommendation-trend",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/net-share-purchase-activity",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/institution-ownership",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/sec-filings",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_v2_stock/earnings",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to get the list of files in the folder '/diagrams' and also check the storage usage. Can you provide me with the file names, sizes, and modified dates? Additionally, retrieve the storage disk usage.",
+    "reference": [
+      {
+        "tool": "Aspose.Diagram Cloud_DownloadFileWithFormat",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_DownloadFile",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_ObjectExists",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetFilesList",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetPages",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetDiscUsage",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetFileVersions",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetMasters",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetShapes",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_StorageExists",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to start a new business in Los Angeles and I need information on the local market, competitors, and potential customers. Can you provide me with data on the current market trends, top competitors, and target customer demographics in Los Angeles?",
+    "reference": [
+      {
+        "tool": "VALUE SERP_Google Search",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Locations",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Product Online Sellers",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Product",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Place Details",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Product Specifications",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Product Reviews",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Shopping",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Places",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Video",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need a GIF that represents the word 'oops' for a project. Can you provide me with a random sticker GIF that has the tag 'oops'? Additionally, fetch the latest trending stickers and return 10 results.",
+    "reference": [
+      {
+        "tool": "Giphy_Search",
+        "param": {}
+      },
+      {
+        "tool": "Giphy_Get GIF by ID",
+        "param": {}
+      },
+      {
+        "tool": "Giphy_Get GIFs by ID",
+        "param": {}
+      },
+      {
+        "tool": "Giphy_Translate",
+        "param": {}
+      },
+      {
+        "tool": "Giphy_Random",
+        "param": {}
+      },
+      {
+        "tool": "Giphy_Trending GIFs",
+        "param": {}
+      },
+      {
+        "tool": "Giphy_Sticker Search",
+        "param": {}
+      },
+      {
+        "tool": "Giphy_STICKER Roulette",
+        "param": {}
+      },
+      {
+        "tool": "Giphy_STICKER Trending",
+        "param": {}
+      },
+      {
+        "tool": "Giphy_STICKER Translate",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Please provide information about the existence of the diagram stored at '/documents/diagrams/flowchart.vdx'. Additionally, download the file.",
+    "reference": [
+      {
+        "tool": "Aspose.Diagram Cloud_DownloadFileWithFormat",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_DownloadFile",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_ObjectExists",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetFilesList",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetPages",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetDiscUsage",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetFileVersions",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetMasters",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_GetShapes",
+        "param": {}
+      },
+      {
+        "tool": "Aspose.Diagram Cloud_StorageExists",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Please fetch the shareuid for the company name IBM. Also, provide me with the price-book ratio for the share with the number 2 from 2019-12-15 to 2020-03-15.",
+    "reference": [
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Dividend",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Index_Isin",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Index_Name",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Index_Wkn",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Pricetobook",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Pricetocashflow",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Pricetoearning",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Pricetosales",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Roa",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Roe",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm a cryptocurrency enthusiast and I want to stay updated on the latest news. Can you provide me with expert analysis opinions for a specific cryptocurrency? Please paginate the results and give me the second page. Additionally, I would like to see the full-size chart for this cryptocurrency.",
+    "reference": [
+      {
+        "tool": "Investing - Cryptocurrency Markets_coins/search",
+        "param": {}
+      },
+      {
+        "tool": "Investing - Cryptocurrency Markets_coins/get-analysis",
+        "param": {}
+      },
+      {
+        "tool": "Investing - Cryptocurrency Markets_coins/get-fullsize-chart",
+        "param": {}
+      },
+      {
+        "tool": "Investing - Cryptocurrency Markets_coins/get-historical-data",
+        "param": {}
+      },
+      {
+        "tool": "Investing - Cryptocurrency Markets_coins/get-markets",
+        "param": {}
+      },
+      {
+        "tool": "Investing - Cryptocurrency Markets_coins/get-overview",
+        "param": {}
+      },
+      {
+        "tool": "Investing - Cryptocurrency Markets_get-meta-data",
+        "param": {}
+      },
+      {
+        "tool": "Investing - Cryptocurrency Markets_get-ico-calendar",
+        "param": {}
+      },
+      {
+        "tool": "Investing - Cryptocurrency Markets_coins/get-brief-chart",
+        "param": {}
+      },
+      {
+        "tool": "Investing - Cryptocurrency Markets_currencies/list",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to create a comprehensive guide for Lost Ark players. Can you fetch me the list of all classes in the game, along with the characters associated with each class? Additionally, please provide me with the details of the stronghold item recipes and battle item recipes.",
+    "reference": [
+      {
+        "tool": "Lost Ark Simple_Get Sailors",
+        "param": {}
+      },
+      {
+        "tool": "Lost Ark Simple_Get Character Skills",
+        "param": {}
+      },
+      {
+        "tool": "Lost Ark Simple_Get Cards Collection",
+        "param": {}
+      },
+      {
+        "tool": "Lost Ark Simple_Get Weapon Recipes",
+        "param": {}
+      },
+      {
+        "tool": "Lost Ark Simple_Get Food Recipes",
+        "param": {}
+      },
+      {
+        "tool": "Lost Ark Simple_Get Stronghold Item Recipes",
+        "param": {}
+      },
+      {
+        "tool": "Lost Ark Simple_Get Chest Item Recipes",
+        "param": {}
+      },
+      {
+        "tool": "Lost Ark Simple_Get Classes List",
+        "param": {}
+      },
+      {
+        "tool": "Lost Ark Simple_Get Life Skill Tool Recipes",
+        "param": {}
+      },
+      {
+        "tool": "Lost Ark Simple_Get Battle Item Recipes",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a party and I want to create a playlist with songs featuring my favorite artist. Can you provide me with a list of songs that feature the artist with ID '2w9zwq3AktTeYYMuhMjju8'? I would like the songs to have their names, descriptions, and images.",
+    "reference": [
+      {
+        "tool": "Spotify Web_Artist featuring",
+        "param": {}
+      },
+      {
+        "tool": "Spotify Web_Artist discovered on",
+        "param": {}
+      },
+      {
+        "tool": "Spotify Web_Artist appears on",
+        "param": {}
+      },
+      {
+        "tool": "Spotify Web_Artist singles",
+        "param": {}
+      },
+      {
+        "tool": "Spotify Web_Artist albums",
+        "param": {}
+      },
+      {
+        "tool": "Spotify Web_Artist discography overview",
+        "param": {}
+      },
+      {
+        "tool": "Spotify Web_Artist overview",
+        "param": {}
+      },
+      {
+        "tool": "Spotify Web_Get artists",
+        "param": {}
+      },
+      {
+        "tool": "Spotify Web_Album metadata",
+        "param": {}
+      },
+      {
+        "tool": "Spotify Web_Album tracks",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm managing a carbon management project for my company and need to check the status of various tasks. Can you provide the status and details for the tasks with the following IDs: 'f3094b2f-501a-4931-aa9c-f2ace5b455e1', '6a923457-c12c-4d7a-b7f5-d8882fc12ad0', and '6028d3ee-2b80-4f3b-8b46-fd69c7ee5b40'? Please include the current progress, state, and total count of the results.",
+    "reference": [
+      {
+        "tool": "Carbon management_CheckFactorswithMongoDB",
+        "param": {}
+      },
+      {
+        "tool": "Carbon management_Status for getting pdf urls",
+        "param": {}
+      },
+      {
+        "tool": "Carbon management_Statusforemissiontable",
+        "param": {}
+      },
+      {
+        "tool": "Carbon management_Statusforkeysentenceextraction",
+        "param": {}
+      },
+      {
+        "tool": "Carbon management_Getprocesscountforcelery",
+        "param": {}
+      },
+      {
+        "tool": "Carbon management_Statusforonepdffilecrawler",
+        "param": {}
+      },
+      {
+        "tool": "Carbon management_Statusforexcelemissionanalysis",
+        "param": {}
+      },
+      {
+        "tool": "Carbon management_Statusforemissionreductiontarget",
+        "param": {}
+      },
+      {
+        "tool": "Carbon management_Statusformapperevaluation",
+        "param": {}
+      },
+      {
+        "tool": "Carbon management_Statusforemissionreductiontargetbyurl",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "My friends and I are planning a hiking trip to Yosemite National Park. Can you provide us with the weather forecast for the park for the next 3 days? We would like to know the temperature, precipitation probability, and wind speed. Additionally, we are interested in finding hiking trails in the park. Could you suggest some popular trails and provide information on their difficulty level and scenic views?",
+    "reference": [
+      {
+        "tool": "VALUE SERP_Google Search",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Locations",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Product Online Sellers",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Product",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Place Details",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Product Specifications",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Product Reviews",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Shopping",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Places",
+        "param": {}
+      },
+      {
+        "tool": "VALUE SERP_Google Video",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a trip to attend a MotoGP race in Japan. Can you provide me with the details of the upcoming race, including the circuit, race distance, and weather forecast? Also, fetch the competitor standings for the race and the flag image of the MotoGP category.",
+    "reference": [
+      {
+        "tool": "MotorsportApi_StageDetails",
+        "param": {}
+      },
+      {
+        "tool": "MotorsportApi_FeaturedStage",
+        "param": {}
+      },
+      {
+        "tool": "MotorsportApi_Categories",
+        "param": {}
+      },
+      {
+        "tool": "MotorsportApi_StageSubstages",
+        "param": {}
+      },
+      {
+        "tool": "MotorsportApi_TeamDetails",
+        "param": {}
+      },
+      {
+        "tool": "MotorsportApi_StageCompetitorStandings",
+        "param": {}
+      },
+      {
+        "tool": "MotorsportApi_TVCountries",
+        "param": {}
+      },
+      {
+        "tool": "MotorsportApi_TeamRaces",
+        "param": {}
+      },
+      {
+        "tool": "MotorsportApi_CategoryFlag",
+        "param": {}
+      },
+      {
+        "tool": "MotorsportApi_UniqueStageImage",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm doing research on ETFs and need information on recent investment rating changes in the Parent tab. Can you provide me with the recent investment rating change for the ETF with security ID 'F00000O2CG' and also give me the highest rated investments for the same ETF?",
+    "reference": [
+      {
+        "tool": "Morning Star_{type}/parent/get-recent-investment-rating-change",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/portfolio/get-credit-quality",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/price/get-other-fees",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/parent/get-highest-rated-investments",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/sustainability/get-product-involvement",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_{type}/analysis/get-comparables",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_articles/list",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_articles/get-details",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_news/get-details",
+        "param": {}
+      },
+      {
+        "tool": "Morning Star_news/list",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am planning to update my Minecraft game to the latest version. Could you provide me with the list of available Optifine versions? Once I decide on the version, I would also like to download it. Additionally, I would need to download the corresponding Minecraft .jar file and its checksum for verification.",
+    "reference": [
+      {
+        "tool": "Minecraft-Forge-Optifine_optifineVersionList",
+        "param": {}
+      },
+      {
+        "tool": "Minecraft-Forge-Optifine_downloadForgeInstaller",
+        "param": {}
+      },
+      {
+        "tool": "Minecraft-Forge-Optifine_minecraftResources",
+        "param": {}
+      },
+      {
+        "tool": "Minecraft-Forge-Optifine_forgeVersionList",
+        "param": {}
+      },
+      {
+        "tool": "Minecraft-Forge-Optifine_minecraftVersionList",
+        "param": {}
+      },
+      {
+        "tool": "Minecraft-Forge-Optifine_downloadOptimize",
+        "param": {}
+      },
+      {
+        "tool": "Minecraft-Forge-Optifine_downloadMinecraftJar",
+        "param": {}
+      },
+      {
+        "tool": "Minecraft-Forge-Optifine_forgeLegacyList",
+        "param": {}
+      },
+      {
+        "tool": "Minecraft-Forge-Optifine_downloadMinecraftJson",
+        "param": {}
+      },
+      {
+        "tool": "Minecraft-Forge-Optifine_downloadMinecraftJarChecksum",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I am a gardener and I need to know the hourly weather forecast for the next 3 days. Can you give me information on temperature, precipitation, wind speed, and cloud cover? I want to plan my watering schedule accordingly.",
+    "reference": [
+      {
+        "tool": "AI Weather by Meteosource_historical_weather",
+        "param": {}
+      },
+      {
+        "tool": "AI Weather by Meteosource_weather_statistics",
+        "param": {}
+      },
+      {
+        "tool": "AI Weather by Meteosource_hourly",
+        "param": {}
+      },
+      {
+        "tool": "AI Weather by Meteosource_current",
+        "param": {}
+      },
+      {
+        "tool": "AI Weather by Meteosource_daily",
+        "param": {}
+      },
+      {
+        "tool": "AI Weather by Meteosource_minutely",
+        "param": {}
+      },
+      {
+        "tool": "AI Weather by Meteosource_alerts",
+        "param": {}
+      },
+      {
+        "tool": "AI Weather by Meteosource_find_places",
+        "param": {}
+      },
+      {
+        "tool": "AI Weather by Meteosource_find_places_prefix",
+        "param": {}
+      },
+      {
+        "tool": "AI Weather by Meteosource_nearest_place",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Give me the balance sheet, ESG score, and financial analytics for Tesla (symbol: TSLA). I'm also interested in the index trend and earnings trend for the company.",
+    "reference": [
+      {
+        "tool": "Yahoo Finance_news",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_Trend",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_index",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_historic-data",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_balance-sheet",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_price",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_ESG",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_finance-analytics",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_earnings",
+        "param": {}
+      },
+      {
+        "tool": "Yahoo Finance_Statistics",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Retrieve the shareuid for a company named 'Microsoft Corporation' in order to access its fundamental data. Also, find the price-earnings ratio (P/E ratio) for the share with ISIN US5949181045 from 2020-01-01 to 2021-01-01.",
+    "reference": [
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Dividend",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Index_Isin",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Index_Name",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Index_Wkn",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Pricetobook",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Pricetocashflow",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Pricetoearning",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Pricetosales",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Roa",
+        "param": {}
+      },
+      {
+        "tool": "Finanzoo API_Fundamentals_API_Roe",
+        "param": {}
+      }
+    ]
+  }
+]

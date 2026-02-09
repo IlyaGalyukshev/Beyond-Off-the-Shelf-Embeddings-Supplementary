@@ -1,0 +1,7022 @@
+[
+  {
+    "question": "I need a ride to the airport. Can you book an Uber for me?",
+    "reference": [
+      {
+        "tool": "book_uber_ride",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "login_to_uber",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_user_settings",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you arrange an UberXL for me to get to the downtown conference center?",
+    "reference": [
+      {
+        "tool": "book_uber_ride",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "login_to_uber",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_user_settings",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm heading to the mall and would like to travel in comfort. Can you book a ride for me?",
+    "reference": [
+      {
+        "tool": "book_uber_ride",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "login_to_uber",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_user_settings",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just got a new Audible book, '1984,' and I want to start listening to it. Can you play it for me?",
+    "reference": [
+      {
+        "tool": "read_audible_book",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "audible_account_login",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you play 'Pride and Prejudice' for me in French? I want to practice my language skills while enjoying the story.",
+    "reference": [
+      {
+        "tool": "read_audible_book",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "audible_account_login",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm in the mood for some classic literature. Can you start playing 'Moby Dick' from my Audible library?",
+    "reference": [
+      {
+        "tool": "read_audible_book",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "audible_account_login",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just heard about a great book called '1984' and I'd love to listen to it. Can you download it for me from Libby?",
+    "reference": [
+      {
+        "tool": "download_libby_book",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "libby_account_login",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a road trip and want to listen to 'The Alchemist' in Spanish. Can you grab it from Libby for me?",
+    "reference": [
+      {
+        "tool": "download_libby_book",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "libby_account_login",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you help me download 'Pride and Prejudice' from Libby? I'd like to listen to it in French.",
+    "reference": [
+      {
+        "tool": "download_libby_book",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "libby_account_login",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'd like to listen to 'Pride and Prejudice' on Libby. Can you start it for me?",
+    "reference": [
+      {
+        "tool": "read_libby_book",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "libby_account_login",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you play 'Don Quixote' in Spanish from my Libby app?",
+    "reference": [
+      {
+        "tool": "read_libby_book",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "libby_account_login",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm in the mood for some French literature. Could you play 'Les Misérables' for me on Libby?",
+    "reference": [
+      {
+        "tool": "read_libby_book",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "libby_account_login",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me how much battery is left on my Bluetooth headphones?",
+    "reference": [
+      {
+        "tool": "check_bluetooth_device_battery",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "list_connected_bluetooth_devices",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_bluetooth_status",
+        "param": {}
+      },
+      {
+        "tool": "set_bluetooth_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to know the battery level of my Bluetooth speaker. Is it running low?",
+    "reference": [
+      {
+        "tool": "check_bluetooth_device_battery",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "list_connected_bluetooth_devices",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_bluetooth_status",
+        "param": {}
+      },
+      {
+        "tool": "set_bluetooth_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you check if my wireless keyboard still has enough battery?",
+    "reference": [
+      {
+        "tool": "check_bluetooth_device_battery",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "list_connected_bluetooth_devices",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_bluetooth_status",
+        "param": {}
+      },
+      {
+        "tool": "set_bluetooth_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to see the new Marvel movie tonight at 7:30 PM. Can you get me 3 tickets?",
+    "reference": [
+      {
+        "tool": "buy_amc_tickets",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "login_amc",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you book 2 tickets for the 5:00 PM show of 'Inception' at AMC?",
+    "reference": [
+      {
+        "tool": "buy_amc_tickets",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "login_amc",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a movie night with friends. Could you purchase 4 tickets for the 8:00 PM screening of 'Avatar'?",
+    "reference": [
+      {
+        "tool": "buy_amc_tickets",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "login_amc",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'd like to see the new superhero movie at Regal tonight. Can you get me two tickets for the 7:30 PM show?",
+    "reference": [
+      {
+        "tool": "buy_regal_tickets",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "login_regal",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you book three tickets for the 5:00 PM show of 'The Grand Adventure' at Regal Cinemas?",
+    "reference": [
+      {
+        "tool": "buy_regal_tickets",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "login_regal",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to watch 'Romantic Escape' at Regal. Could you purchase four tickets for the 8:15 PM screening?",
+    "reference": [
+      {
+        "tool": "buy_regal_tickets",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "login_regal",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to see the new superhero movie tonight at 7:30 PM. Can you get me two tickets?",
+    "reference": [
+      {
+        "tool": "buy_cinemark_tickets",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "login_cinemark",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you book three tickets for the 5:00 PM show of 'The Great Adventure' at Cinemark?",
+    "reference": [
+      {
+        "tool": "buy_cinemark_tickets",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "login_cinemark",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I’d like to purchase four tickets for the 8:15 PM screening of 'Romantic Getaway' at Cinemark. Can you handle that?",
+    "reference": [
+      {
+        "tool": "buy_cinemark_tickets",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "login_cinemark",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you set the thermostat to 72 degrees at 6:30 PM today?",
+    "reference": [
+      {
+        "tool": "set_alexa_thermostat_temperature",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "update_application_by_name",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want the temperature to be 68 degrees at 8:00 AM tomorrow. Can you arrange that?",
+    "reference": [
+      {
+        "tool": "set_alexa_thermostat_temperature",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "update_application_by_name",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Please adjust the thermostat to 75 degrees at 9:15 PM tonight.",
+    "reference": [
+      {
+        "tool": "set_alexa_thermostat_temperature",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "update_application_by_name",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you set the thermostat to 72 degrees at 6:30 PM today?",
+    "reference": [
+      {
+        "tool": "set_google_home_thermostat_temperature",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "update_application_by_name",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want the house to be cozy at 68 degrees by 8:00 AM tomorrow. Can you arrange that?",
+    "reference": [
+      {
+        "tool": "set_google_home_thermostat_temperature",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "update_application_by_name",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Please adjust the thermostat to 75 degrees at 9:00 PM tonight.",
+    "reference": [
+      {
+        "tool": "set_google_home_thermostat_temperature",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "update_application_by_name",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "My phone's battery is running low, and I need to make sure it lasts through the day. Can you adjust the settings to help with that?",
+    "reference": [
+      {
+        "tool": "optimize_physical_performance",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm about to watch a movie on my device, but I want to make sure the screen and sound settings are perfect. Can you optimize them for me?",
+    "reference": [
+      {
+        "tool": "optimize_physical_performance",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need my device to be in top shape for a presentation. Can you tweak the settings to ensure everything runs smoothly?",
+    "reference": [
+      {
+        "tool": "optimize_physical_performance",
+        "param": {}
+      },
+      {
+        "tool": "get_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_low_battery_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_battery_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get all my Delta updates via email. Can you set that up for me?",
+    "reference": [
+      {
+        "tool": "delta_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "delta_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you turn off push notifications for my Delta account? I find them a bit distracting.",
+    "reference": [
+      {
+        "tool": "delta_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "delta_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to update my notification settings on Delta. I prefer to receive updates through push notifications only.",
+    "reference": [
+      {
+        "tool": "delta_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "delta_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get all my flight updates via email from United. Can you set that up for me?",
+    "reference": [
+      {
+        "tool": "united_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "united_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you turn off push notifications for my United Airlines account? I find them a bit distracting.",
+    "reference": [
+      {
+        "tool": "united_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "united_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just changed my email address and need to update my United notifications to the new one. Can you help with that?",
+    "reference": [
+      {
+        "tool": "united_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "united_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get all my flight updates via email from JetBlue. Can you set that up for me?",
+    "reference": [
+      {
+        "tool": "jetblue_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "jetblue_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you turn off push notifications for my JetBlue account? I find them a bit distracting.",
+    "reference": [
+      {
+        "tool": "jetblue_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "jetblue_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just changed my email address and need to update my JetBlue notifications to the new one. Can you help with that?",
+    "reference": [
+      {
+        "tool": "jetblue_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "jetblue_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get all my flight updates via email from American Airlines. Can you set that up for me?",
+    "reference": [
+      {
+        "tool": "american_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "american_user_login",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you turn off push notifications for my American Airlines account? I find them a bit distracting.",
+    "reference": [
+      {
+        "tool": "american_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "american_user_login",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just changed my email address. Can you update my American Airlines notifications to go to my new email?",
+    "reference": [
+      {
+        "tool": "american_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "american_user_login",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get all the latest updates from Southwest via email. Can you set that up for me?",
+    "reference": [
+      {
+        "tool": "southwest_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "southwest_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you turn off push notifications for my Southwest account? I find them a bit distracting.",
+    "reference": [
+      {
+        "tool": "southwest_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "southwest_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just changed my email address and need to update my Southwest notifications to the new one. Can you help with that?",
+    "reference": [
+      {
+        "tool": "southwest_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "southwest_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to order some groceries for tonight's dinner. Can you arrange for a delivery of milk, eggs, and bread by 6 PM today?",
+    "reference": [
+      {
+        "tool": "place_instacart_order",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you help me set up a grocery delivery for tomorrow? I need apples, bananas, and chicken to arrive by 10 AM.",
+    "reference": [
+      {
+        "tool": "place_instacart_order",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a barbecue this weekend. Could you order some steaks, sausages, and buns to be delivered on Saturday at noon?",
+    "reference": [
+      {
+        "tool": "place_instacart_order",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you order some groceries for me to be delivered by 6 PM today?",
+    "reference": [
+      {
+        "tool": "place_doordash_order",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need a meal delivered tomorrow at noon. Can you arrange that for me?",
+    "reference": [
+      {
+        "tool": "place_doordash_order",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you set up a delivery for some snacks and drinks for this evening?",
+    "reference": [
+      {
+        "tool": "place_doordash_order",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm craving some sushi tonight. Can you order a sushi platter for me on Uber Eats?",
+    "reference": [
+      {
+        "tool": "place_ubereats_order",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need some groceries delivered tomorrow morning. Can you arrange that through Uber Eats?",
+    "reference": [
+      {
+        "tool": "place_ubereats_order",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you help me order a pizza for delivery at 7 PM today?",
+    "reference": [
+      {
+        "tool": "place_ubereats_order",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I have a virtual appointment with my doctor today. Can you help me join the session?",
+    "reference": [
+      {
+        "tool": "join_doctor_virtual_consultation",
+        "param": {}
+      },
+      {
+        "tool": "get_doctor_appointments",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_do_not_disturb_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "set_do_not_disturb_status",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm supposed to have a video call with my doctor soon. Can you connect me to the consultation?",
+    "reference": [
+      {
+        "tool": "join_doctor_virtual_consultation",
+        "param": {}
+      },
+      {
+        "tool": "get_doctor_appointments",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_do_not_disturb_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "set_do_not_disturb_status",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you assist me in joining my online consultation with the doctor? I want to make sure everything is set up properly.",
+    "reference": [
+      {
+        "tool": "join_doctor_virtual_consultation",
+        "param": {}
+      },
+      {
+        "tool": "get_doctor_appointments",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_do_not_disturb_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "set_do_not_disturb_status",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me the total GDP for New York City for the year 2022?",
+    "reference": [
+      {
+        "tool": "get_total_gdp_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_gdp_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm doing a project on Tokyo's economy. Could you find out its GDP for last year?",
+    "reference": [
+      {
+        "tool": "get_total_gdp_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_gdp_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "What's the GDP of Los Angeles for 2021?",
+    "reference": [
+      {
+        "tool": "get_total_gdp_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_gdp_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me the GDP per person for New York City in 2020?",
+    "reference": [
+      {
+        "tool": "get_gdp_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_total_gdp_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm curious about the economic performance of Tokyo. What's its GDP per capita for last year?",
+    "reference": [
+      {
+        "tool": "get_gdp_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_total_gdp_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you find out the GDP per capita for Paris for the year 2018?",
+    "reference": [
+      {
+        "tool": "get_gdp_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_total_gdp_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me the total GDP for the sub-region with code 'NA' for the year 2022?",
+    "reference": [
+      {
+        "tool": "get_total_gdp_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_gdp_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm interested in the GDP of the sub-region coded 'EU' for last year. Could you find that for me?",
+    "reference": [
+      {
+        "tool": "get_total_gdp_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_gdp_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you fetch the GDP for the sub-region 'AS' for the current year?",
+    "reference": [
+      {
+        "tool": "get_total_gdp_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_gdp_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me the GDP per capita for the Southern Asia region for the year 2020?",
+    "reference": [
+      {
+        "tool": "get_gdp_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_total_gdp_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm doing a project on economic growth. Could you find out the GDP per capita for Eastern Europe for last year?",
+    "reference": [
+      {
+        "tool": "get_gdp_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_total_gdp_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "What's the GDP per capita for the Caribbean region this year?",
+    "reference": [
+      {
+        "tool": "get_gdp_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_total_gdp_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me the total government revenue for New York City last year?",
+    "reference": [
+      {
+        "tool": "get_total_government_revenue_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_revenue_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm doing a report on Los Angeles. Could you find out how much revenue the city government collected in 2020?",
+    "reference": [
+      {
+        "tool": "get_total_government_revenue_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_revenue_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "What's the total revenue collected by the government in Chicago for this year?",
+    "reference": [
+      {
+        "tool": "get_total_government_revenue_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_revenue_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me the government revenue per person for New York City in 2022?",
+    "reference": [
+      {
+        "tool": "get_government_revenue_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_revenue_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm curious about how much revenue per capita was generated by the government in Los Angeles last year. Can you find that out?",
+    "reference": [
+      {
+        "tool": "get_government_revenue_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_revenue_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you provide the per capita government revenue for Chicago for the year 2020?",
+    "reference": [
+      {
+        "tool": "get_government_revenue_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_revenue_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me how much revenue the government collected in the northern region last year?",
+    "reference": [
+      {
+        "tool": "get_total_government_revenue_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_revenue_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm doing a report on government finances. Could you find out the total revenue for the southern sub-region for 2020?",
+    "reference": [
+      {
+        "tool": "get_total_government_revenue_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_revenue_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to know the government revenue for the western area for this year. Can you help me with that?",
+    "reference": [
+      {
+        "tool": "get_total_government_revenue_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_revenue_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me the government revenue per person for the Midwest region in 2022?",
+    "reference": [
+      {
+        "tool": "get_government_revenue_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_revenue_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm doing a project on economic data. Could you find out the per capita government revenue for the Northeast region last year?",
+    "reference": [
+      {
+        "tool": "get_government_revenue_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_revenue_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "What's the government revenue per capita for the Southern region this year?",
+    "reference": [
+      {
+        "tool": "get_government_revenue_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_revenue_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me how much the government spent in New York City last year?",
+    "reference": [
+      {
+        "tool": "get_total_government_spending_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_spending_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm curious about the government expenditure for Los Angeles in 2022. Could you find that information for me?",
+    "reference": [
+      {
+        "tool": "get_total_government_spending_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_spending_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "What's the total government spending for Chicago this year?",
+    "reference": [
+      {
+        "tool": "get_total_government_spending_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_spending_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me how much the government spent per person in New York City last year?",
+    "reference": [
+      {
+        "tool": "get_government_spending_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_spending_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm curious about the per capita government spending in Los Angeles for 2022. Could you find that information?",
+    "reference": [
+      {
+        "tool": "get_government_spending_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_spending_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "What's the government spending per person in Chicago for this year?",
+    "reference": [
+      {
+        "tool": "get_government_spending_per_capita_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_city_code",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_spending_by_city",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me how much the government spent in the North-East region last year?",
+    "reference": [
+      {
+        "tool": "get_total_government_spending_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_spending_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm doing a report on government expenditures. Could you find out the total spending for the South-West region in 2020?",
+    "reference": [
+      {
+        "tool": "get_total_government_spending_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_spending_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to know the government spending for the Central region this year. Can you help with that?",
+    "reference": [
+      {
+        "tool": "get_total_government_spending_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_government_spending_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you tell me how much the government spent per person in the North region last year?",
+    "reference": [
+      {
+        "tool": "get_government_spending_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_spending_by_sub_region",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm doing a report on government expenditures. Could you find out the per capita spending for the South region in 2020?",
+    "reference": [
+      {
+        "tool": "get_government_spending_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_spending_by_sub_region",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to know the government spending per person for the East region this year. Can you get that information for me?",
+    "reference": [
+      {
+        "tool": "get_government_spending_per_capita_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_total_population_by_sub_region",
+        "param": {}
+      },
+      {
+        "tool": "get_country_code",
+        "param": {}
+      },
+      {
+        "tool": "get_sub_region_code",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "get_total_government_spending_by_sub_region",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you help me figure out the PEG ratio for a company if I only have the earnings and stock price?",
+    "reference": [
+      {
+        "tool": "calculate_peg_ratio",
+        "param": {}
+      },
+      {
+        "tool": "calculate_p_e_ratio",
+        "param": {}
+      },
+      {
+        "tool": "get_net_income",
+        "param": {}
+      },
+      {
+        "tool": "get_stock_ticker",
+        "param": {}
+      },
+      {
+        "tool": "get_current_stock_price",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_eps_growth_rate",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "get_eps",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to know the PEG ratio for a stock, but I only have its P/E ratio. Can you calculate it for me?",
+    "reference": [
+      {
+        "tool": "calculate_peg_ratio",
+        "param": {}
+      },
+      {
+        "tool": "calculate_p_e_ratio",
+        "param": {}
+      },
+      {
+        "tool": "get_net_income",
+        "param": {}
+      },
+      {
+        "tool": "get_stock_ticker",
+        "param": {}
+      },
+      {
+        "tool": "get_current_stock_price",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_eps_growth_rate",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "get_eps",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "What's the PEG ratio if the EPS growth rate is 0.05 and the P/E ratio is 15?",
+    "reference": [
+      {
+        "tool": "calculate_peg_ratio",
+        "param": {}
+      },
+      {
+        "tool": "calculate_p_e_ratio",
+        "param": {}
+      },
+      {
+        "tool": "get_net_income",
+        "param": {}
+      },
+      {
+        "tool": "get_stock_ticker",
+        "param": {}
+      },
+      {
+        "tool": "get_current_stock_price",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_eps_growth_rate",
+        "param": {}
+      },
+      {
+        "tool": "get_current_date",
+        "param": {}
+      },
+      {
+        "tool": "get_eps",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to stop getting emails from Spirit but keep the push notifications. Can you adjust that for me?",
+    "reference": [
+      {
+        "tool": "spirit_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "spirit_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you make sure I receive all Spirit notifications via email only? I don't want any push notifications.",
+    "reference": [
+      {
+        "tool": "spirit_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "spirit_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just signed up for Spirit and want to set up my notifications. Can you enable both email and push notifications for me?",
+    "reference": [
+      {
+        "tool": "spirit_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "spirit_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get all the latest updates from Qatar Airways via email. Can you set that up for me?",
+    "reference": [
+      {
+        "tool": "qatar_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "qatar_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you turn off push notifications for my Qatar Airways account? I find them a bit distracting.",
+    "reference": [
+      {
+        "tool": "qatar_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "qatar_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just changed my email address and need to update my notification settings with Qatar Airways. Can you help me with that?",
+    "reference": [
+      {
+        "tool": "qatar_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "qatar_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get all the important updates from Frontier. Can you enable both email and push notifications for me?",
+    "reference": [
+      {
+        "tool": "frontier_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "frontier_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm getting too many alerts from Frontier. Could you turn off the push notifications but keep the emails coming?",
+    "reference": [
+      {
+        "tool": "frontier_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "frontier_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I prefer to receive notifications only via email from Frontier. Can you set it up that way?",
+    "reference": [
+      {
+        "tool": "frontier_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "frontier_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I'm getting all the important updates from Lufthansa. Can you enable both email and push notifications for me?",
+    "reference": [
+      {
+        "tool": "lufthansa_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "lufthansa_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I prefer not to receive any notifications from Lufthansa. Can you turn off all notifications for my account?",
+    "reference": [
+      {
+        "tool": "lufthansa_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "lufthansa_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I only want to receive email notifications from Lufthansa. Can you adjust my settings accordingly?",
+    "reference": [
+      {
+        "tool": "lufthansa_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "lufthansa_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get all the latest updates from Emirates via email. Can you set that up for me?",
+    "reference": [
+      {
+        "tool": "emirates_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "emirates_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you turn off push notifications for my Emirates account? I find them a bit distracting.",
+    "reference": [
+      {
+        "tool": "emirates_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "emirates_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just changed my email address. Can you update my Emirates notifications to be sent to my new email?",
+    "reference": [
+      {
+        "tool": "emirates_manage_notifications",
+        "param": {}
+      },
+      {
+        "tool": "emirates_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "get_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_notifications",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you set my Tesla to warm up the cabin at 7:30 AM tomorrow?",
+    "reference": [
+      {
+        "tool": "tesla_schedule_climate_preconditioning",
+        "param": {}
+      },
+      {
+        "tool": "login_to_tesla_account",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "convert_to_desired_unit",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want my Tesla to be nice and cool at 18 degrees Celsius by 5:00 PM. Can you arrange that?",
+    "reference": [
+      {
+        "tool": "tesla_schedule_climate_preconditioning",
+        "param": {}
+      },
+      {
+        "tool": "login_to_tesla_account",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "convert_to_desired_unit",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you make sure my car is preheated to 22 degrees at 8:00 AM?",
+    "reference": [
+      {
+        "tool": "tesla_schedule_climate_preconditioning",
+        "param": {}
+      },
+      {
+        "tool": "login_to_tesla_account",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "convert_to_desired_unit",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you bring my Tesla closer to me? I'm standing in the parking lot and it's a bit far.",
+    "reference": [
+      {
+        "tool": "tesla_summon_vehicle",
+        "param": {}
+      },
+      {
+        "tool": "login_to_tesla_account",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need my car to back out of the garage. Can you handle that for me?",
+    "reference": [
+      {
+        "tool": "tesla_summon_vehicle",
+        "param": {}
+      },
+      {
+        "tool": "login_to_tesla_account",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you move my Tesla forward a bit? It's parked too close to the wall.",
+    "reference": [
+      {
+        "tool": "tesla_summon_vehicle",
+        "param": {}
+      },
+      {
+        "tool": "login_to_tesla_account",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a road trip and need to find the nearest Tesla Supercharger. Can you help me locate one?",
+    "reference": [
+      {
+        "tool": "find_tesla_charger_tool",
+        "param": {}
+      },
+      {
+        "tool": "login_to_tesla_account",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to charge my Tesla at a destination charger nearby. Can you find one for me?",
+    "reference": [
+      {
+        "tool": "find_tesla_charger_tool",
+        "param": {}
+      },
+      {
+        "tool": "login_to_tesla_account",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you show me where the closest Tesla Superchargers are? I need to top up my battery soon.",
+    "reference": [
+      {
+        "tool": "find_tesla_charger_tool",
+        "param": {}
+      },
+      {
+        "tool": "login_to_tesla_account",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_installed_applications",
+        "param": {}
+      },
+      {
+        "tool": "get_current_storage_space",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I have a window seat for my upcoming Delta flight. Can you update my preferences?",
+    "reference": [
+      {
+        "tool": "delta_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "delta_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm flying with Delta soon and would like to change my meal to a vegetarian option. Can you handle that for me?",
+    "reference": [
+      {
+        "tool": "delta_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "delta_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you update my Delta travel preferences to include an aisle seat and a kosher meal for my next trip?",
+    "reference": [
+      {
+        "tool": "delta_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "delta_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get a window seat on my next United flight. Can you update my preferences?",
+    "reference": [
+      {
+        "tool": "united_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "united_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you set my meal preference to vegetarian for my upcoming United flights?",
+    "reference": [
+      {
+        "tool": "united_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "united_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I usually prefer an aisle seat and a kosher meal when flying with United. Can you update my travel preferences accordingly?",
+    "reference": [
+      {
+        "tool": "united_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "united_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I have a window seat for my upcoming JetBlue flight. Can you update my preferences?",
+    "reference": [
+      {
+        "tool": "jetblue_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "jetblue_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you change my meal preference to vegetarian for my next JetBlue trip?",
+    "reference": [
+      {
+        "tool": "jetblue_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "jetblue_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I just realized I prefer an aisle seat and a kosher meal for my JetBlue flight. Can you update that for me?",
+    "reference": [
+      {
+        "tool": "jetblue_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "jetblue_user_login",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to make sure I get a window seat on my next American Airlines flight. Can you update my preferences?",
+    "reference": [
+      {
+        "tool": "american_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "american_user_login",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm flying with American Airlines soon and would like to have a vegetarian meal. Can you set that up for me?",
+    "reference": [
+      {
+        "tool": "american_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "american_user_login",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you update my American Airlines profile to prefer aisle seats and kosher meals for future flights?",
+    "reference": [
+      {
+        "tool": "american_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "american_user_login",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm flying with Southwest soon and want to make sure I have a window seat. Can you update my preferences?",
+    "reference": [
+      {
+        "tool": "southwest_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "southwest_user_login",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to change my meal preference to vegetarian for my upcoming Southwest flight. Can you handle that for me?",
+    "reference": [
+      {
+        "tool": "southwest_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "southwest_user_login",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you update my Southwest travel preferences to include an aisle seat and a kosher meal?",
+    "reference": [
+      {
+        "tool": "southwest_update_travel_preferences",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_system_language",
+        "param": {}
+      },
+      {
+        "tool": "southwest_user_login",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "set_airplane_mode_status",
+        "param": {}
+      },
+      {
+        "tool": "validate_email",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm about to start my morning jog. Can you activate the fitness tracking on my wearable?",
+    "reference": [
+      {
+        "tool": "start_fitness_tracker_mode",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_clock_timer",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_bluetooth_status",
+        "param": {}
+      },
+      {
+        "tool": "set_bluetooth_status",
+        "param": {}
+      },
+      {
+        "tool": "get_clock_timers",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to track my workout for the next 45 minutes. Can you set up the fitness tracker for that duration?",
+    "reference": [
+      {
+        "tool": "start_fitness_tracker_mode",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_clock_timer",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_bluetooth_status",
+        "param": {}
+      },
+      {
+        "tool": "set_bluetooth_status",
+        "param": {}
+      },
+      {
+        "tool": "get_clock_timers",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you turn on the fitness tracking mode on my device? I'm going for a walk and want to monitor my steps and heart rate.",
+    "reference": [
+      {
+        "tool": "start_fitness_tracker_mode",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_clock_timer",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_bluetooth_status",
+        "param": {}
+      },
+      {
+        "tool": "set_bluetooth_status",
+        "param": {}
+      },
+      {
+        "tool": "get_clock_timers",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a dinner for four people tomorrow evening. Can you find a nice place nearby on Resy?",
+    "reference": [
+      {
+        "tool": "resy_search_restaurants",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "resy_reserve_restaurant_table",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you help me find a restaurant for a lunch date today for two people?",
+    "reference": [
+      {
+        "tool": "resy_search_restaurants",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "resy_reserve_restaurant_table",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm looking for a spot for a family dinner this weekend for six people. Can you check what's available on Resy?",
+    "reference": [
+      {
+        "tool": "resy_search_restaurants",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "resy_reserve_restaurant_table",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm planning a dinner for four this Saturday at 7 PM. Can you find some nice places nearby?",
+    "reference": [
+      {
+        "tool": "opentable_search_restaurants",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "opentable_reserve_restaurant_table",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you help me find a restaurant for a lunch meeting tomorrow at noon for three people?",
+    "reference": [
+      {
+        "tool": "opentable_search_restaurants",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "opentable_reserve_restaurant_table",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I need to book a table for two tonight around 8 PM. Can you check what's available in the area?",
+    "reference": [
+      {
+        "tool": "opentable_search_restaurants",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "opentable_reserve_restaurant_table",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you arrange for my groceries to be delivered tomorrow at 10 AM? I need milk, bread, and eggs.",
+    "reference": [
+      {
+        "tool": "schedule_grocery_delivery",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to order some groceries from Whole Foods. Can you have them delivered to my place by 3 PM today? I need apples, chicken, and rice.",
+    "reference": [
+      {
+        "tool": "schedule_grocery_delivery",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Please schedule a grocery delivery for me. I need pasta, tomatoes, and cheese. Deliver it to my home address at 5 PM.",
+    "reference": [
+      {
+        "tool": "schedule_grocery_delivery",
+        "param": {}
+      },
+      {
+        "tool": "get_current_time",
+        "param": {}
+      },
+      {
+        "tool": "get_current_location",
+        "param": {}
+      },
+      {
+        "tool": "set_location_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_user_profile",
+        "param": {}
+      },
+      {
+        "tool": "get_current_weather",
+        "param": {}
+      },
+      {
+        "tool": "get_system_timezone",
+        "param": {}
+      },
+      {
+        "tool": "get_us_national_holiday",
+        "param": {}
+      },
+      {
+        "tool": "get_location_service_status",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you play the latest music video by Taylor Swift on YouTube and make sure the volume is set to 75?",
+    "reference": [
+      {
+        "tool": "play_youtube_video",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to watch a tutorial on how to bake a cake on YouTube. Please play it at a comfortable volume of 50.",
+    "reference": [
+      {
+        "tool": "play_youtube_video",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Could you start the YouTube video of the latest tech review and set the sound to 30?",
+    "reference": [
+      {
+        "tool": "play_youtube_video",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I want to watch the latest episode of my favorite show on Netflix. Can you play it for me?",
+    "reference": [
+      {
+        "tool": "play_netflix_video",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "Can you start playing the Netflix movie with ID '12345' at a comfortable volume?",
+    "reference": [
+      {
+        "tool": "play_netflix_video",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      }
+    ]
+  },
+  {
+    "question": "I'm in the mood for a movie night. Could you play the Netflix video with ID '67890' and make sure the sound is just right?",
+    "reference": [
+      {
+        "tool": "play_netflix_video",
+        "param": {}
+      },
+      {
+        "tool": "set_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "set_volume_level",
+        "param": {}
+      },
+      {
+        "tool": "get_cellular_service_status",
+        "param": {}
+      },
+      {
+        "tool": "get_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "set_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "set_screen_brightness",
+        "param": {}
+      },
+      {
+        "tool": "get_wifi_status",
+        "param": {}
+      },
+      {
+        "tool": "get_volume_level",
+        "param": {}
+      }
+    ]
+  }
+]
