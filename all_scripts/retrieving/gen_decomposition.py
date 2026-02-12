@@ -12,23 +12,22 @@ from tqdm import tqdm
 
 sys.path.append(str(Path(__file__).parent.parent))
 from utils.config import (
+    DATASET,
     PLANNER_AGENT_SYSTEM_PROMPT,
     OPENROUTER_API_KEY,
     OPENROUTER_MODEL,
     OPENROUTER_URL,
     PLANNER_K,
+    TEST_BENCHMARKS_PATH,
+    TOOLS_PATH,
 )
 from utils.data_utils import structure_tool
 
-WORKSPACE_ROOT = Path(__file__).parent.parent.parent
-TOOLS_PATH_ABS = str(WORKSPACE_ROOT / "data/ultratool/tools_expanded.json")
-TEST_BENCHMARKS_PATH_ABS = str(
-    WORKSPACE_ROOT / "data/ultratool/top_benchmarks_enriched.json"
-)
-OUTPUT_PATH = str(WORKSPACE_ROOT / "data/ultratool/decompositions.json")
-
 BASE_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-TRAINED_MODEL_STAGE2 = "./all_scripts/train_embed/checkpoints-adv/minilm-stage2"
+DATASET_TAG = Path(TOOLS_PATH).parent.name if TOOLS_PATH else DATASET
+TRAINED_MODEL_STAGE2 = str(
+    Path(__file__).parent.parent / "train_embed" / f"checkpoints-{DATASET_TAG}" / "minilm-stage2"
+)
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 QUERY_PREFIX = "query: "
@@ -95,12 +94,10 @@ def invoke_planner(llm, user_request: str, tool_desc_block: str) -> List[str]:
             ("system", PLANNER_AGENT_SYSTEM_PROMPT),
             (
                 "user",
-                "Available tools:\n"
-                + tool_desc_block
-                + "\n\nUser request:\n{user_request}",
+                "Available tools:\n{tool_desc_block}\n\nUser request:\n{user_request}",
             ),
         ]
-    ).format_prompt(user_request=user_request)
+    ).format_prompt(user_request=user_request, tool_desc_block=tool_desc_block)
 
     response = llm.invoke(prompt).content
     parsed, err = parse_json_strict(response)
@@ -159,14 +156,15 @@ def main():
     print("=" * 80)
     print(f"Device: {DEVICE}")
     print(f"Planner K (top-K tools): {PLANNER_K}")
-    print(f"Test benchmarks: {TEST_BENCHMARKS_PATH_ABS}")
-    print(f"Tools: {TOOLS_PATH_ABS}")
-    print(f"Output: {OUTPUT_PATH}")
+    print(f"Test benchmarks: {TEST_BENCHMARKS_PATH}")
+    print(f"Tools: {TOOLS_PATH}")
+    output_path = str(Path(TOOLS_PATH).parent / "decompositions.json")
+    print(f"Output: {output_path}")
 
-    tools = load_json(TOOLS_PATH_ABS)
+    tools = load_json(TOOLS_PATH)
     tools_dict = {tool["name"]: tool for tool in tools}
     tool_names = list(tools_dict.keys())
-    benchmarks = load_json(TEST_BENCHMARKS_PATH_ABS)
+    benchmarks = load_json(TEST_BENCHMARKS_PATH)
 
     print(f"\nLoaded {len(tools)} tools and {len(benchmarks)} benchmarks")
 
@@ -255,8 +253,8 @@ def main():
     print("Saving results")
     print(f"{'='*80}")
     print(f"Total decompositions: {len(all_decompositions)}")
-    save_json(all_decompositions, OUTPUT_PATH)
-    print(f"Saved to: {OUTPUT_PATH}")
+    save_json(all_decompositions, output_path)
+    print(f"Saved to: {output_path}")
 
     print("\n" + "=" * 80)
     print("Statistics")

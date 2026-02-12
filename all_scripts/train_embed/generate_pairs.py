@@ -1,6 +1,14 @@
 import json
 import random
-from config import TOOLS_PATH, TRAIN_BENCHMARKS_PATH, PAIRS_PATH, SEED
+import os
+import sys
+
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_ALL_SCRIPTS_DIR = os.path.abspath(os.path.join(_SCRIPT_DIR, ".."))
+if _ALL_SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, _ALL_SCRIPTS_DIR)
+
+from utils.config import TOOLS_PATH, TRAIN_BENCHMARKS_PATH, PAIRS_PATH, SEED
 from utils import structure_tool
 
 QUERY_PREFIX = 'query: '

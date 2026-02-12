@@ -3,10 +3,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOOLS_PATH = "../../data/ultratool/tools_expanded.json"
-TRAIN_BENCHMARKS_PATH = "../../data/ultratool/without_top_benchmarks_enriched.json"
-TEST_BENCHMARKS_PATH = "../../data/ultratool/top_benchmarks_enriched.json"
-PAIRS_PATH = "../../data/ultratool/pairs_augmented.json"
+DATASET = os.getenv("DATASET", "ultratool").strip() or "ultratool"
+_ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+DATA_DIR = os.path.join(_ROOT_DIR, "data", DATASET)
+
+TOOLS_PATH = os.path.join(DATA_DIR, "tools_expanded.json")
+TRAIN_BENCHMARKS_PATH = os.path.join(DATA_DIR, "without_top_benchmarks_enriched.json")
+TEST_BENCHMARKS_PATH = os.path.join(DATA_DIR, "top_benchmarks_enriched.json")
+PAIRS_PATH = os.path.join(DATA_DIR, "pairs_augmented.json")
 SEED = 42
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_KEY")

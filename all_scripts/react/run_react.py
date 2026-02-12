@@ -1,6 +1,7 @@
 import json
 import logging
 import statistics
+import os
 import sys
 import tempfile
 import re
@@ -16,10 +17,43 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_community.vectorstores import Chroma
 from langchain_openai import ChatOpenAI
 
-# Override config paths
-BENCHMARK_PATH = "../../data/ultratool/top_benchmarks_enriched.json"
-TOOLS_PATH = "../../data/ultratool/tools_expanded.json"
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+_ALL_SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+if str(_ALL_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_ALL_SCRIPTS_DIR))
+
+from utils.config import DATASET, TEST_BENCHMARKS_PATH, TOOLS_PATH  # noqa: E402
+
+DATASET_TAG = Path(TOOLS_PATH).parent.name if TOOLS_PATH else DATASET
+BENCHMARK_PATH = TEST_BENCHMARKS_PATH
+
+REACT_EMBEDDER = (os.getenv("REACT_EMBEDDER", "base").strip().lower() or "base")
+RUN_TAG = f"{DATASET_TAG}_{REACT_EMBEDDER}"
+
+BASE_EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+QUERY_PREFIX = ""
+PASSAGE_PREFIX = ""
+
+
+def resolve_stage2_model_dir(dataset_tag: str) -> str:
+    candidates = [
+        Path.cwd() / f"checkpoints-{dataset_tag}" / "minilm-stage2",
+        Path(__file__).resolve().parents[1]
+        / "train_embed"
+        / f"checkpoints-{dataset_tag}"
+        / "minilm-stage2",
+    ]
+    for p in candidates:
+        if (p / "config.json").exists():
+            return str(p)
+    return str(candidates[0])
+
+
+if REACT_EMBEDDER == "stage2":
+    EMBEDDING_MODEL = resolve_stage2_model_dir(DATASET_TAG)
+    QUERY_PREFIX = "query: "
+    PASSAGE_PREFIX = "passage: "
+else:
+    EMBEDDING_MODEL = BASE_EMBEDDING_MODEL
 
 from config import (
     SUBTASK_K,
@@ -61,14 +95,14 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("react_ultratool_base.log"),
+        logging.FileHandler(f"react_{RUN_TAG}.log"),
         logging.StreamHandler(sys.stdout),
     ],
 )
 logger = logging.getLogger(__name__)
 
-PROGRESS_FILE = Path(
-    "/workspace/all_scripts/react/results/tmp_ultratool_base_progress.json"
+PROGRESS_FILE = (
+    Path(__file__).resolve().parent / "results" / f"tmp_{RUN_TAG}_progress.json"
 )
 
 
@@ -79,23 +113,39 @@ class STEmbeddings(Embeddings):
         self,
         st_model: SentenceTransformer,
         *,
-        query_prompt_name: str = "query",
+        query_prompt_name: Optional[str] = "query",
         normalize: bool = True,
+        query_prefix: str = "",
+        passage_prefix: str = "",
     ):
         self.model = st_model
         self.query_prompt_name = query_prompt_name
         self.normalize = normalize
+        self.query_prefix = query_prefix
+        self.passage_prefix = passage_prefix
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        vecs = self.model.encode(texts, normalize_embeddings=self.normalize).tolist()
+        texts_pref = (
+            [self.passage_prefix + t for t in texts] if self.passage_prefix else texts
+        )
+        vecs = self.model.encode(
+            texts_pref, normalize_embeddings=self.normalize
+        ).tolist()
         return vecs
 
     def embed_query(self, text: str) -> list[float]:
-        vec = self.model.encode(
-            [text],
-            prompt_name=self.query_prompt_name,
-            normalize_embeddings=self.normalize,
-        )[0]
+        text_pref = (self.query_prefix + text) if self.query_prefix else text
+        if self.query_prompt_name:
+            vec = self.model.encode(
+                [text_pref],
+                prompt_name=self.query_prompt_name,
+                normalize_embeddings=self.normalize,
+            )[0]
+        else:
+            vec = self.model.encode(
+                [text_pref],
+                normalize_embeddings=self.normalize,
+            )[0]
         return vec.tolist()
 
 
@@ -573,6 +623,9 @@ def invoke_react_agent(
 def main() -> None:
     logger.info("🚀 Starting ReAct Agent Benchmark (improved)")
     logger.info("=" * 80)
+    logger.info(f"Dataset: {DATASET_TAG}")
+    logger.info(f"Embedder: {REACT_EMBEDDER}")
+    logger.info(f"Embedding model: {EMBEDDING_MODEL}")
 
     benchmark = load_benchmark(BENCHMARK_PATH)
     tools_schema = load_tools(TOOLS_PATH)
@@ -586,7 +639,13 @@ def main() -> None:
     logger.info("🤖 Initializing models and vector database...")
 
     st_model = SentenceTransformer(EMBEDDING_MODEL)
-    embeddings = STEmbeddings(st_model, normalize=NORMALIZE_EMBEDDINGS)
+    embeddings = STEmbeddings(
+        st_model,
+        normalize=NORMALIZE_EMBEDDINGS,
+        query_prompt_name=("query" if REACT_EMBEDDER == "base" else None),
+        query_prefix=QUERY_PREFIX,
+        passage_prefix=PASSAGE_PREFIX,
+    )
     logger.info(
         f"✅ Sentence transformer model loaded (normalize={NORMALIZE_EMBEDDINGS})"
     )

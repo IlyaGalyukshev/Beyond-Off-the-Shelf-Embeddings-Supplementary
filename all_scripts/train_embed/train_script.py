@@ -2,6 +2,7 @@ import json
 import math
 import os
 import random
+import sys
 from collections import defaultdict
 from typing import Optional
 from dataclasses import dataclass
@@ -17,8 +18,14 @@ from sentence_transformers import (
 from sentence_transformers.util import cos_sim
 from tqdm import tqdm
 
-from config import (
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_ALL_SCRIPTS_DIR = os.path.abspath(os.path.join(_SCRIPT_DIR, ".."))
+if _ALL_SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, _ALL_SCRIPTS_DIR)
+
+from utils.config import (
     PAIRS_PATH,
+    TRAIN_BENCHMARKS_PATH,
     TEST_BENCHMARKS_PATH,
     TOOLS_PATH,
     SEED,
@@ -49,8 +56,9 @@ STAGE2_MARGIN = 0.1
 USE_FP16 = True  
 
 WEIGHT_DECAY = 0.01
-SAVE_DIR_STAGE1 = "./checkpoints-adv/minilm-stage1"
-SAVE_DIR_STAGE2 = "./checkpoints-adv/minilm-stage2"
+DATASET_TAG = os.path.basename(os.path.dirname(TOOLS_PATH.rstrip("/"))) or "dataset"
+SAVE_DIR_STAGE1 = f"./checkpoints-{DATASET_TAG}/minilm-stage1"
+SAVE_DIR_STAGE2 = f"./checkpoints-{DATASET_TAG}/minilm-stage2"
 
 QUERY_PREFIX = "query: "
 PASSAGE_PREFIX = "passage: "
@@ -117,31 +125,96 @@ def load_pairs_grouped(
     return pairs, groups
 
 
-def build_stage1_examples(
-    groups: dict[str, dict[str, list[str]]],
-    max_negatives_per_positive: int = STAGE1_MAX_NEG_PER_POS,
-) -> list[InputExample]:
-    """
-    Stage 1: строим примеры (query, positive, [negatives...]) с размеченными негативами.
-    """
-    print("\nPreparing Stage 1 training examples with labeled negatives...")
-    examples: list[InputExample] = []
+def load_tools(tools_path: str):
+    tools = load_json(tools_path)
+    tools_dict = {tool["name"]: tool for tool in tools if tool.get("name")}
+    tool_names = list(tools_dict.keys())
+    tool_passages_by_name = {
+        name: structure_tool(name, tools_dict[name], PASSAGE_PREFIX) for name in tool_names
+    }
+    tool_passages = [tool_passages_by_name[name] for name in tool_names]
+    return tools_dict, tool_names, tool_passages, tool_passages_by_name
 
-    for query, data in groups.items():
-        positives = data["positive"]
-        negatives = data["negative"]
 
-        if not positives:
+def load_train_positives(
+    train_benchmarks_path: str,
+    tools_dict: dict,
+) -> list[tuple[str, str, frozenset[str]]]:
+    benchmarks = load_json(train_benchmarks_path)
+    positives: list[tuple[str, str, frozenset[str]]] = []
+
+    for benchmark in benchmarks:
+        query = benchmark.get("question", "")
+        if not query:
             continue
 
-        for pos_tool in positives:
-            sampled_negatives: list[str] = []
-            if negatives:
-                k = min(max_negatives_per_positive, len(negatives))
-                sampled_negatives = random.sample(negatives, k=k)
+        query_str = maybe_add_prefix(query, QUERY_PREFIX)
 
-            texts = [query, pos_tool] + sampled_negatives
-            examples.append(InputExample(texts=texts))
+        reference_toolset = benchmark.get("toolset", [])
+        reference_tool_names = {
+            tool.get("name")
+            for tool in reference_toolset
+            if tool.get("name") in tools_dict
+        }
+        reference_tool_names.discard(None)
+
+        if not reference_tool_names:
+            continue
+
+        ref_set = frozenset(reference_tool_names)
+        for tool_name in ref_set:
+            positives.append((query_str, tool_name, ref_set))
+
+    random.shuffle(positives)
+    print(f"Loaded {len(positives)} positive pairs from {train_benchmarks_path}")
+    return positives
+
+
+def sample_negative_tool_names(
+    tool_names: list[str],
+    forbidden: frozenset[str],
+    k: int,
+) -> list[str]:
+    if k <= 0:
+        return []
+    if len(forbidden) >= len(tool_names):
+        return []
+
+    selected: set[str] = set()
+    tries = 0
+    max_tries = max(100, k * 50)
+    while len(selected) < k and tries < max_tries:
+        tries += 1
+        cand = random.choice(tool_names)
+        if cand in forbidden or cand in selected:
+            continue
+        selected.add(cand)
+    return list(selected)
+
+
+def build_stage1_examples(
+    positives: list[tuple[str, str, frozenset[str]]],
+    tool_names: list[str],
+    tool_passages_by_name: dict[str, str],
+    max_negatives_per_positive: int = STAGE1_MAX_NEG_PER_POS,
+) -> list[InputExample]:
+    print("\nPreparing Stage 1 training examples...")
+    examples: list[InputExample] = []
+
+    for query, pos_tool_name, reference_tool_names in positives:
+        pos_tool = tool_passages_by_name.get(pos_tool_name)
+        if not pos_tool:
+            continue
+
+        neg_names = sample_negative_tool_names(
+            tool_names=tool_names,
+            forbidden=reference_tool_names,
+            k=max_negatives_per_positive,
+        )
+        negs = [tool_passages_by_name[n] for n in neg_names if n in tool_passages_by_name]
+
+        texts = [query, pos_tool] + negs
+        examples.append(InputExample(texts=texts))
 
     random.shuffle(examples)
     print(f"Stage 1: constructed {len(examples)} training examples")
@@ -150,33 +223,29 @@ def build_stage1_examples(
 
 def mine_hard_negatives(
     model: SentenceTransformer,
-    groups: dict[str, dict[str, list[str]]],
+    positives: list[tuple[str, str, frozenset[str]]],
+    tool_names: list[str],
+    tool_passages_by_name: dict[str, str],
     num_samples: int = STAGE2_SAMPLES,
     max_hard_negatives_per_positive: int = STAGE2_MAX_HARD_NEG_PER_POS,
     max_candidates_per_query: int = STAGE2_MAX_CANDIDATES_PER_QUERY,
     margin: float = STAGE2_MARGIN,
 ) -> list[InputExample]:
-    """
-    Stage 2: positive-aware hard negatives.
-    """
     print(f"\nMining positive-aware hard negatives (up to {num_samples} positives)...")
 
-    positive_triples: list[tuple[str, str, list[str]]] = []
-    for query, data in groups.items():
-        positives = data["positive"]
-        negatives = data["negative"]
-        if not positives or not negatives:
-            continue
-        for pos_tool in positives:
-            positive_triples.append((query, pos_tool, negatives))
+    candidates: list[tuple[str, str, frozenset[str]]] = [
+        (query, pos_tool_name, reference_tool_names)
+        for (query, pos_tool_name, reference_tool_names) in positives
+        if pos_tool_name in tool_passages_by_name and len(reference_tool_names) < len(tool_names)
+    ]
 
-    if not positive_triples:
-        print("No positive triples with negatives found. Skipping Stage 2 mining.")
+    if not candidates:
+        print("No candidates with negatives found. Skipping Stage 2 mining.")
         return []
 
-    random.shuffle(positive_triples)
+    random.shuffle(candidates)
     if num_samples > 0:
-        positive_triples = positive_triples[: min(num_samples, len(positive_triples))]
+        candidates = candidates[: min(num_samples, len(candidates))]
 
     query_emb_cache: dict[str, torch.Tensor] = {}
     tool_emb_cache: dict[str, torch.Tensor] = {}
@@ -189,34 +258,34 @@ def mine_hard_negatives(
             query_emb_cache[q] = emb.cpu()
         return query_emb_cache[q]
 
-    def get_tool_emb(t: str) -> torch.Tensor:
-        if t not in tool_emb_cache:
+    def get_tool_emb(tool_name: str) -> torch.Tensor:
+        if tool_name not in tool_emb_cache:
+            passage = tool_passages_by_name.get(tool_name)
+            if not passage:
+                raise KeyError(tool_name)
             emb = model.encode(
-                t, convert_to_tensor=True, show_progress_bar=False
+                passage, convert_to_tensor=True, show_progress_bar=False
             )
-            tool_emb_cache[t] = emb.cpu()
-        return tool_emb_cache[t]
+            tool_emb_cache[tool_name] = emb.cpu()
+        return tool_emb_cache[tool_name]
 
     examples: list[InputExample] = []
 
-    for idx, (query, pos_tool, negatives) in enumerate(tqdm(
-        positive_triples, desc="Mining hard negatives"
+    for idx, (query, pos_tool_name, reference_tool_names) in enumerate(tqdm(
+        candidates, desc="Mining hard negatives"
     )):
-        if not negatives:
-            continue
-
         q_emb = get_query_emb(query).to(DEVICE)
-        pos_emb = get_tool_emb(pos_tool).to(DEVICE)
+        pos_emb = get_tool_emb(pos_tool_name).to(DEVICE)
 
-        if len(negatives) > max_candidates_per_query:
-            candidate_negs = random.sample(negatives, max_candidates_per_query)
-        else:
-            candidate_negs = list(negatives)
-
-        if not candidate_negs:
+        neg_names = sample_negative_tool_names(
+            tool_names=tool_names,
+            forbidden=reference_tool_names,
+            k=min(max_candidates_per_query, len(tool_names) - len(reference_tool_names)),
+        )
+        if not neg_names:
             continue
 
-        neg_embs_list: list[torch.Tensor] = [get_tool_emb(t).to(DEVICE) for t in candidate_negs]
+        neg_embs_list: list[torch.Tensor] = [get_tool_emb(n).to(DEVICE) for n in neg_names]
         neg_embs = torch.stack(neg_embs_list)
 
         q_emb_2d = q_emb.unsqueeze(0)
@@ -243,10 +312,10 @@ def mine_hard_negatives(
             continue
 
         selected_negatives: list[str] = [
-            candidate_negs[i] for i in selected_indices.tolist()
+            tool_passages_by_name[neg_names[i]] for i in selected_indices.tolist()
         ]
 
-        texts = [query, pos_tool] + selected_negatives
+        texts = [query, tool_passages_by_name[pos_tool_name]] + selected_negatives
         examples.append(InputExample(texts=texts))
         
         if idx % 100 == 0:
@@ -309,20 +378,24 @@ class EvalResults:
 def evaluate_model(
     model: SentenceTransformer,
     test_benchmarks_path: str,
-    tools_path: str,
+    tools_path: Optional[str] = None,
+    tool_names: Optional[list[str]] = None,
+    tool_passages: Optional[list[str]] = None,
 ) -> EvalResults:
     """
     Evaluate model on test benchmarks (retrieval only, no planner).
     """
     print(f"\nEvaluating on {test_benchmarks_path}...")
 
-    tools = load_json(tools_path)
-    tools_dict = {tool["name"]: tool for tool in tools}
-    tool_names = list(tools_dict.keys())
-
-    tool_passages = [
-        structure_tool(name, tools_dict[name], PASSAGE_PREFIX) for name in tool_names
-    ]
+    if tool_names is None or tool_passages is None:
+        if not tools_path:
+            raise ValueError("tools_path is required when tool_names/tool_passages are not provided")
+        tools = load_json(tools_path)
+        tools_dict = {tool["name"]: tool for tool in tools if tool.get("name")}
+        tool_names = list(tools_dict.keys())
+        tool_passages = [
+            structure_tool(name, tools_dict[name], PASSAGE_PREFIX) for name in tool_names
+        ]
 
     print("Encoding tools...")
     tool_embeddings = model.encode(
@@ -517,7 +590,8 @@ def main():
     print(f"  Stage 1 model exists: {stage1_exists} ({SAVE_DIR_STAGE1})")
     print(f"  Stage 2 model exists: {stage2_exists} ({SAVE_DIR_STAGE2})")
 
-    _, groups = load_pairs_grouped(PAIRS_PATH)
+    tools_dict, tool_names, tool_passages, tool_passages_by_name = load_tools(TOOLS_PATH)
+    positives = load_train_positives(TRAIN_BENCHMARKS_PATH, tools_dict=tools_dict)
 
     if not stage1_exists:
         print("\n" + "=" * 80)
@@ -528,7 +602,8 @@ def main():
         baseline_results = evaluate_model(
             model=base_model,
             test_benchmarks_path=TEST_BENCHMARKS_PATH,
-            tools_path=TOOLS_PATH,
+            tool_names=tool_names,
+            tool_passages=tool_passages,
         )
         print(f"Baseline: {baseline_results}")
 
@@ -547,7 +622,9 @@ def main():
         print("=" * 80)
 
         stage1_examples = build_stage1_examples(
-            groups=groups,
+            positives=positives,
+            tool_names=tool_names,
+            tool_passages_by_name=tool_passages_by_name,
             max_negatives_per_positive=STAGE1_MAX_NEG_PER_POS,
         )
         print(f"Loaded {len(stage1_examples)} examples for Stage 1")
@@ -573,7 +650,8 @@ def main():
     stage1_results = evaluate_model(
         model=stage1_model,
         test_benchmarks_path=TEST_BENCHMARKS_PATH,
-        tools_path=TOOLS_PATH,
+        tool_names=tool_names,
+        tool_passages=tool_passages,
     )
     print(f"Stage 1: {stage1_results}")
 
@@ -587,18 +665,23 @@ def main():
 
         stage2_examples = mine_hard_negatives(
             model=stage1_model,
-            groups=groups,
+            positives=positives,
+            tool_names=tool_names,
+            tool_passages_by_name=tool_passages_by_name,
             num_samples=STAGE2_SAMPLES,
             max_hard_negatives_per_positive=STAGE2_MAX_HARD_NEG_PER_POS,
             max_candidates_per_query=STAGE2_MAX_CANDIDATES_PER_QUERY,
             margin=STAGE2_MARGIN,
         )
 
-        stage2_model = train_stage2(
-            model=stage1_model,
-            train_examples=stage2_examples,
-            save_dir=SAVE_DIR_STAGE2,
-        )
+        if stage2_examples:
+            stage2_model = train_stage2(
+                model=stage1_model,
+                train_examples=stage2_examples,
+                save_dir=SAVE_DIR_STAGE2,
+            )
+        else:
+            stage2_model = stage1_model
     else:
         print("\n" + "=" * 80)
         print("Loading existing Stage 2 model")
@@ -614,7 +697,8 @@ def main():
     stage2_results = evaluate_model(
         model=stage2_model,
         test_benchmarks_path=TEST_BENCHMARKS_PATH,
-        tools_path=TOOLS_PATH,
+        tool_names=tool_names,
+        tool_passages=tool_passages,
     )
     print(f"Stage 2: {stage2_results}")
 
