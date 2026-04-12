@@ -24,7 +24,6 @@ DEFAULT_TEST_BENCHMARKS_PATH1 = str(WORKSPACE_ROOT / "data/stabletoolbench/top_b
 DEFAULT_TEST_BENCHMARKS_PATH2 = str(WORKSPACE_ROOT / "data/stabletoolbench/without_top_benchmarks_enriched.json")
 
 BASELINE_LLM_MODEL = "openai/gpt-4o"
-OPENROUTER_API_KEY = "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"
 DECOMPOSER_SYSTEM_PROMPT = """
 You are a task decomposer.
 
