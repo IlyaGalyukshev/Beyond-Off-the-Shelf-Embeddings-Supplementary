@@ -12,7 +12,7 @@ sys.path.append(str(WORKSPACE_ROOT))
 os.environ.setdefault("OPENAI_API_KEY", "dummy")
 
 from all_scripts.execution_agent import ExecutionRequest, ToolCard, run_execution_agent
-from all_scripts.replanner_retrieving.replanner_retrieving import (
+from all_scripts.agentic_pipelines.replanner_retrieving.replanner_retrieving import (
     BASELINE_LLM_MODEL,
     OPENROUTER_API_KEY,
     prepare_dataset_for_model,
